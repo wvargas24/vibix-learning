@@ -1,0 +1,80 @@
+.navbar-dropdown-account-wrapper {
+    padding: 6px;
+}
+
+.avatar-sm,
+.avatar-sm .avatar-initials {
+    width: 36px;
+    height: 36px;
+}
+
+.dropdown-toggle::after {
+    border-top: none;
+    border-left: none;
+}
+
+.btn-sm-status {
+    width: 16px;
+    height: 16px;
+    color: var(--bs-white);
+}
+
+.btn.rounded-circle .btn-sm-status {
+    top: 0.15625rem;
+    right: 0.15625rem;
+}
+
+.navbar-vertical-fixed {
+    top: 80px;
+}
+
+.navbar-dropdown-account-wrapper h5 {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--bs-black);
+}
+
+.navbar-dropdown-account .fullname {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--bs-body-color);
+}
+
+.navbar-dropdown-account p {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw---fw-regular-plus);
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bs-body-color);
+}
+
+.navbar-dropdown-account .position {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw---fw-regular-plus);
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--bs-acqua-dark);
+}
+
+.navbar-dropdown-account .btn {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--bs-white);
+}
+
+@media (min-width: 1200px) {
+    .navbar-vertical-aside-show-xl .navbar:not(.navbar-vertical) {
+        margin-left: 0;
+    }
+}
