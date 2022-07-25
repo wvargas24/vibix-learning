@@ -166,6 +166,75 @@
     box-shadow: 0px 0px 20px rgb(156 224 194 / 80%) !important;
 }
 
+.card-header-title {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--bs-body-color);
+}
+
+.card-students h3 {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--bs-body-color);
+}
+
+.list-recent-events li {
+    padding: 25px 1rem;
+}
+
+.list-recent-events li span,
+.card-last-reflection span {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--bs-secondary);
+}
+
+.list-recent-events li h5 {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--bs-body-color);
+}
+
+.card-last-reflection h5 {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--bs-body-color);
+}
+
+.card-last-reflection p {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bs-body-color);
+    margin-top: 20px;
+}
+
+.nav-vertical.nav-pills .nav-link.active {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--bs-acqua-dark);
+}
+
 @media (min-width: 1200px) {
     .navbar-vertical-aside-show-xl .navbar:not(.navbar-vertical) {
         margin-left: 0;

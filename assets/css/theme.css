@@ -24010,10 +24010,6 @@ label.form-control {
     background-color: transparent
 }
 
-.nav-vertical.nav-pills .nav-link.active {
-    background-color: rgba(189, 197, 209, .2)
-}
-
 .nav-vertical.nav-pills .nav-link.active[aria-expanded=false],
 .nav-vertical.nav-pills .nav-link.active[aria-expanded=true] {
     background-color: transparent
