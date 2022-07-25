@@ -226,6 +226,15 @@
     margin-top: 20px;
 }
 
+.nav-vertical.nav-pills .nav-link.active {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--bs-acqua-dark);
+}
+
 @media (min-width: 1200px) {
     .navbar-vertical-aside-show-xl .navbar:not(.navbar-vertical) {
         margin-left: 0;
