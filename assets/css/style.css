@@ -46,6 +46,20 @@
     color: var(--bs-body-color);
 }
 
+.navbar-dropdown-account textarea {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bs-body-color);
+    border: none;
+    width: 100%;
+    background: rgba(239, 239, 239, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+}
+
 .navbar-dropdown-account p {
     font-family: var(--bs-body-font-family);
     font-style: normal;
@@ -184,6 +198,16 @@
     color: var(--bs-body-color);
 }
 
+.card-students:hover {
+    background: #EFEFEF;
+    box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.06) !important;
+    border-radius: 10px;
+}
+
+.card-students:hover .text-inherit {
+    color: var(--bs-body-color) !important;
+}
+
 .list-recent-events li {
     padding: 25px 1rem;
 }
@@ -226,6 +250,15 @@
     margin-top: 20px;
 }
 
+.nav-vertical.nav-pills .nav-link {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 17px;
+    line-height: 20px;
+    color: var(--bs-gray-dark);
+}
+
 .nav-vertical.nav-pills .nav-link.active {
     font-family: var(--bs-body-font-family);
     font-style: normal;
@@ -233,6 +266,55 @@
     font-size: 17px;
     line-height: 20px;
     color: var(--bs-acqua-dark);
+}
+
+.nav-vertical.nav-pills .nav-link {
+    padding: 0.5rem 0.875rem !important;
+    margin-bottom: 1.52rem;
+}
+
+.card-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.badge-button {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--bs-white);
+    background: linear-gradient(319.83deg, #4ECEC2 -0.79%, #9CE0C2 120.19%);
+    border-radius: 10px;
+}
+
+.tom-select-custom .ts-control {
+    padding: 0.6125rem 3rem 0.6125rem 1rem;
+    min-height: calc(1.5em + 0.75rem + 2px);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.ts-control>input {
+    flex: 1 1 auto;
+    min-width: 7rem;
+    display: inline-block !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-indent: 0 !important;
+    border: 0 none !important;
+    background: 0 0 !important;
+    line-height: inherit !important;
+    -webkit-user-select: auto !important;
+    -moz-user-select: auto !important;
+    -ms-user-select: auto !important;
+    user-select: auto !important;
+    box-shadow: none !important;
 }
 
 @media (min-width: 1200px) {
