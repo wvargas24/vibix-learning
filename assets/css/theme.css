@@ -3587,9 +3587,9 @@ textarea.form-control-lg {
 
 .btn {
     display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #677788;
+    font-weight: var(--fw-semibold);
+    line-height: 20px;
+    color: var(--bs-white);
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -3600,7 +3600,7 @@ textarea.form-control-lg {
     background-color: transparent;
     border: .0625rem solid transparent;
     padding: .6125rem 1rem;
-    font-size: .875rem;
+    font-size: 17px;
     border-radius: .3125rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
@@ -6759,7 +6759,7 @@ fieldset:disabled .btn {
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(19, 33, 68, .25)
+    background-color: rgba(12, 12, 12, 0.23);
 }
 
 .modal-backdrop.fade {
@@ -33352,7 +33352,12 @@ a:hover .text-inherit {
 .tom-select-custom .ts-dropdown,
 .tom-select-custom .ts-input,
 .tom-select-custom .ts-input input {
-    color: #677788
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bs-body-color);
 }
 
 .tom-select-custom .ts-dropdown,
@@ -33368,7 +33373,7 @@ a:hover .text-inherit {
 .tom-select-custom .ts-dropdown .create:hover,
 .tom-select-custom .ts-dropdown .option:hover {
     color: #1e2022;
-    background-color: rgba(189, 197, 209, .3)
+    background-color: rgba(78, 206, 194, 0.2);
 }
 
 .tom-select-custom .ts-dropdown .create,
@@ -33379,7 +33384,8 @@ a:hover .text-inherit {
 }
 
 .tom-select-custom .ts-dropdown .option {
-    position: relative
+    position: relative;
+    border-top: 1px solid #DCF5F3;
 }
 
 .tom-select-custom .ts-dropdown .option::after {

@@ -317,6 +317,24 @@
     box-shadow: none !important;
 }
 
+.form-control,
+.ts-wrapper.form-select .ts-control,
+.tom-select-custom .ts-control {
+    background: rgba(239, 239, 239, 0.5) !important;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bs-body-color);
+}
+
+.ts-dropdown-content {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
 @media (min-width: 1200px) {
     .navbar-vertical-aside-show-xl .navbar:not(.navbar-vertical) {
         margin-left: 0;
