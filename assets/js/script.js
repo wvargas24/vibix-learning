@@ -1,6 +1,3 @@
-
-
-
 (function() {
     window.onload = function () {
       // INITIALIZATION OF SELECT
@@ -15,7 +12,7 @@
             $(button).prop("disabled", true);
         }
     }
-
+    
     $(document).ready(() => {
         $("#edit-profile-button").on( "click", function() {
             console.log( $( this ).text() );
@@ -96,3 +93,4 @@
     });
 
 })()
+
