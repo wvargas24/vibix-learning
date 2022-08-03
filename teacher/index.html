@@ -698,7 +698,8 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="supportStudentModalLabel">Support student</h5>
+                    <h5 class="modal-title" id="supportStudentModalLabel"><i class="bi bi-arrow-left"></i> Support
+                        student</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
@@ -767,26 +768,71 @@
                             <div class="col-sm-4">
                                 <div class="mb-4">
                                     <label for="">Date</label>
-                                    <input type="date" class="form-control">
+                                    <input id="support-student-date" type="date" class="form-control">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="mb-4">
                                     <label for="">Time</label>
-                                    <input type="time" class="form-control">
+                                    <input id="support-student-time" type="time" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="mb-0">
+                                    <textarea id="support-student-observations" name="" class="form-control" id=""
+                                        placeholder="Write a quick observation of what happened..." cols="30"
+                                        rows="10"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="mb-4">
-                                    <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                                    <p class="text-divider"><span>OR</span></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center mt-5">
+                        <div class="d-flex align-items-center">
+                            <div class="mic-container mx-auto w-100">
+                                <button class="btn btn-mic" id="record">
+                                    <i class="bi bi-mic-fill"></i>
+                                </button>
+                                <div class="recording-box" style="display: none;">
+                                    <button id="stop" disabled style="display: none;" class="btn btn-mic">
+                                        <i class="bi bi-stop-fill"></i>
+                                    </button>
+                                    <button id="play" disabled style="display: none;" class="btn btn-mic">
+                                        <i class="bi bi-play-fill"></i>
+                                    </button>
+                                    <div class="bar" id="volume-visualizer"></div>
+                                    <p id="time" class="mic-time">1:15</p>
+                                </div>
+                                <h3 id="texActivity"></h3>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="mx-auto">
+                                <button id="save" disabled style="display: none;" class="btn btn-mic">
+                                    <i class="bi bi-arrow-up-circle"></i>
+                                </button>
+                                <div id="saved-audio-messages" style="display: none;">
+                                    <h2>Saved messages</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="mx-auto">
+                                <p class="text-descript">Leave an observation via voice note</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-0">
                             <div class="ms-auto">
-                                <button type="button" class="btn btn-success" disabled="disabled">
+                                <button id="support-student-button" type="button" class="btn btn-success"
+                                    disabled="disabled">
                                     Submit
                                 </button>
                             </div>
@@ -810,6 +856,7 @@
     <!-- <script src="/assets/js/vendor.min.js"></script> -->
     <script src="../assets/js/theme.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/mic.js"></script>
 </body>
 
 </html>
