@@ -536,6 +536,17 @@
     margin-right: 16px;
 }
 
+#tagOutModal p {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--bs-body-color);
+
+}
+
 @media (min-width: 1200px) {
     .navbar-vertical-aside-show-xl .navbar:not(.navbar-vertical) {
         margin-left: 0;
