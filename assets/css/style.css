@@ -250,6 +250,11 @@
     margin-top: 20px;
 }
 
+.navbar-vertical-aside .nav.nav-pills {
+    padding-right: 1.25rem;
+    padding-left: 0;
+}
+
 .nav-vertical.nav-pills .nav-link {
     font-family: var(--bs-body-font-family);
     font-style: normal;
@@ -257,6 +262,10 @@
     font-size: 17px;
     line-height: 20px;
     color: var(--bs-gray-dark);
+}
+
+.nav-vertical.nav-pills .nav-link .nav-icon {
+    margin-left: 25px;
 }
 
 .nav-vertical.nav-pills .nav-link.active {
@@ -268,9 +277,19 @@
     color: var(--bs-acqua-dark);
 }
 
+.nav-vertical.nav-pills .nav-link.active::before {
+    content: " ";
+    background: #2E636E;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 17px;
+}
+
 .nav-vertical.nav-pills .nav-link {
     padding: 0.5rem 0.875rem !important;
     margin-bottom: 1.52rem;
+    padding-left: 0 !important;
 }
 
 .card-header {
