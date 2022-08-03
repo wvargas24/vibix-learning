@@ -6823,6 +6823,19 @@ fieldset:disabled .btn {
     font-size: 20px;
     line-height: 23px;
     color: var(--bs-body-color);
+    margin-bottom: 0;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--bs-body-color);
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-body {
