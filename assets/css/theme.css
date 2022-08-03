@@ -3746,8 +3746,8 @@ fieldset:disabled .btn {
 
 .btn-success {
     color: #fff;
-    background-color: #00c9a7;
-    border-color: #00c9a7
+    background-color: #4ECEC2;
+    border-color: #4ECEC2
 }
 
 .btn-success:hover {
@@ -6857,6 +6857,7 @@ fieldset:disabled .btn {
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 1.75rem;
+    padding-top: 0;
     border-top: .0625rem solid rgba(231, 234, 243, .7);
     border-bottom-right-radius: .6875rem;
     border-bottom-left-radius: .6875rem
@@ -23828,7 +23829,7 @@ label.form-control {
 }
 
 .modal-footer {
-    border-top-width: .0625rem
+    border-top-width: 0;
 }
 
 .modal-footer>* {
