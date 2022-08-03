@@ -250,6 +250,11 @@
     margin-top: 20px;
 }
 
+.navbar-vertical-aside .nav.nav-pills {
+    padding-right: 1.25rem;
+    padding-left: 0;
+}
+
 .nav-vertical.nav-pills .nav-link {
     font-family: var(--bs-body-font-family);
     font-style: normal;
@@ -257,6 +262,10 @@
     font-size: 17px;
     line-height: 20px;
     color: var(--bs-gray-dark);
+}
+
+.nav-vertical.nav-pills .nav-link .nav-icon {
+    margin-left: 25px;
 }
 
 .nav-vertical.nav-pills .nav-link.active {
@@ -268,9 +277,19 @@
     color: var(--bs-acqua-dark);
 }
 
+.nav-vertical.nav-pills .nav-link.active::before {
+    content: " ";
+    background: #2E636E;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 17px;
+}
+
 .nav-vertical.nav-pills .nav-link {
     padding: 0.5rem 0.875rem !important;
     margin-bottom: 1.52rem;
+    padding-left: 0 !important;
 }
 
 .card-header {
@@ -509,6 +528,12 @@
     color: var(--bs-body-color);
     margin-bottom: 0;
     margin-right: 10px;
+}
+
+.modal .btn-close {
+    background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/> </svg>') center/1em auto no-repeat;
+    padding: 0;
+    margin-right: 16px;
 }
 
 @media (min-width: 1200px) {

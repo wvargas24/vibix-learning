@@ -6823,6 +6823,19 @@ fieldset:disabled .btn {
     font-size: 20px;
     line-height: 23px;
     color: var(--bs-body-color);
+    margin-bottom: 0;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--bs-body-color);
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-body {
@@ -23878,9 +23891,8 @@ label.form-control {
 }
 
 .nav-icon {
-    opacity: .7;
-    -ms-flex: 0 0 1.9375rem;
-    flex: 0 0 1.9375rem
+    -ms-flex: 0 0 2.25rem;
+    flex: 0 0 2.25rem;
 }
 
 .nav-tabs .nav-link {
@@ -24107,12 +24119,9 @@ label.form-control {
 
 .nav-pills .nav-link:hover {
     color: #132144;
-    background-color: rgba(189, 197, 209, .2)
 }
 
-.nav-pills .nav-link.active:hover {
-    background-color: rgba(189, 197, 209, .2)
-}
+.nav-pills .nav-link.active:hover {}
 
 .nav-pills .nav-link.active:hover,
 .nav-pills .show>.nav-link:hover {

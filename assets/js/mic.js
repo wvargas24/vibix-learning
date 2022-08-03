@@ -1,15 +1,15 @@
 (async () => {
     let volumeCallback = null;
     let volumeInterval = null;
-    const volumeVisualizer = document.getElementById('volume-visualizer');
+    const volumeVisualizer = document.querySelector('#volume-visualizer');
     const recordBox = document.querySelector('.recording-box');
     const recordButton = document.querySelector('#record');
     const stopButton = document.querySelector('#stop');
     const playButton = document.querySelector('#play');
     const saveButton = document.querySelector('#save');
     const savedAudioMessagesContainer = document.querySelector('#saved-audio-messages');
-    const textRecord = document.getElementById("texActivity");
-    const timeSelector = document.getElementById("time");
+    const textRecord = document.querySelector("#texActivity");
+    const timeSelector = document.querySelector("#time");
 
     let recorder;
     let audio;
