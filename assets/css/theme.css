@@ -42,13 +42,13 @@
     --bs-link-hover-color: #00c9a7;
     --bs-button-hover: #1A968A;
     --bs-button-disabled: #2E636EBD;
-    --bs-primary-rgb: 55, 125, 255;
+    --bs-primary-rgb: 220, 245, 243;
     --bs-secondary-rgb: 113, 134, 157;
     --bs-success-rgb: 0, 201, 167;
     --bs-info-rgb: 9, 165, 190;
     --bs-warning-rgb: 245, 202, 153;
     --bs-danger-rgb: 237, 76, 120;
-    --bs-light-rgb: 249, 250, 252;
+    --bs-light-rgb: 204, 204, 204;
     --bs-dark-rgb: 19, 33, 68;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
@@ -9987,7 +9987,7 @@ fieldset:disabled .btn {
 }
 
 .bg-light {
-    --bs-bg-opacity: 1;
+    --bs-bg-opacity: 0.2;
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important
 }
 

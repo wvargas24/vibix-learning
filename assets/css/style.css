@@ -695,6 +695,58 @@ label {
     margin-bottom: 8px;
 }
 
+.scrollbar-overlay {
+    overflow: hidden !important;
+}
+
+.chat-sidebar {
+    position: absolute;
+    height: 100%;
+    z-index: 11;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.contacts-list {
+    height: calc(100% - 2rem);
+    border-right: 1px solid var(--falcon-border-color);
+    overflow-y: auto;
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .contacts-list {
+        height: calc(100% - 2.063rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .chat-sidebar {
+        position: relative;
+        height: 100%;
+        top: 0;
+        left: 0 !important;
+        width: auto;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .chat-sidebar {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 17.5rem;
+        flex: 0 0 17.5rem;
+        max-width: 17.5rem;
+    }
+}
+
 @media (min-width: 1200px) {
     .navbar-vertical-aside-show-xl .navbar:not(.navbar-vertical) {
         margin-left: 0;
