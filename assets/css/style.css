@@ -46,9 +46,6 @@
     color: var(--bs-body-color);
 }
 
-textarea:focus {
-    background: #DCF5F3 !important;
-}
 
 .navbar-dropdown-account textarea {
     font-family: var(--bs-body-font-family);
@@ -298,10 +295,13 @@ textarea:focus {
 
 .card-header {
     border-bottom: none;
-    padding-bottom: 0;
 }
 
-.badge-button {
+.card-body {
+    /* padding-top: 0; */
+}
+
+.badge {
     font-family: var(--bs-body-font-family);
     font-style: normal;
     font-weight: var(--fw-semibold);
@@ -310,6 +310,11 @@ textarea:focus {
     color: var(--bs-white);
     background: linear-gradient(319.83deg, #4ECEC2 -0.79%, #9CE0C2 120.19%);
     border-radius: 10px;
+    padding: 2px 9px;
+}
+
+.badge:hover {
+    background: linear-gradient(329.09deg, #2E636E -2.45%, #4ECEC2 106.48%);
 }
 
 .tom-select-custom .ts-control {
@@ -343,13 +348,18 @@ textarea:focus {
 .form-control,
 .ts-wrapper.form-select .ts-control,
 .tom-select-custom .ts-control {
-    background: rgba(239, 239, 239, 0.5) !important;
     font-family: var(--bs-body-font-family);
     font-style: normal;
     font-weight: var(--fw-regular-plus);
     font-size: 16px;
     line-height: 150%;
     color: var(--bs-body-color);
+}
+
+.ts-wrapper.form-select .ts-control,
+.tom-select-custom .ts-control,
+.bg-gray {
+    background: rgba(239, 239, 239, 0.5) !important;
 }
 
 .ts-dropdown-content {

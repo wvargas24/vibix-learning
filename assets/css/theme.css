@@ -2945,7 +2945,7 @@ textarea.form-control-lg {
     line-height: 1.5;
     color: #677788;
     background-color: #fff;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%2371869d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%232E636E"  class="bi bi-caret-down-fill" viewBox="0 0 16 16"> <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/> </svg>');
     background-repeat: no-repeat;
     background-position: right 1rem center;
     background-size: 13px 9px;
@@ -3614,7 +3614,7 @@ textarea.form-control-lg {
     display: inline-block;
     font-weight: var(--fw-semibold);
     line-height: 20px;
-    color: var(--bs-white);
+    color: var(--bs-body-color);
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -3925,9 +3925,9 @@ fieldset:disabled .btn {
 }
 
 .btn-light {
-    color: #000;
-    background-color: #f9fafc;
-    border-color: #f9fafc
+    color: #858585;
+    background-color: transparent;
+    border-color: transparent
 }
 
 .btn-light:hover {
@@ -4341,7 +4341,7 @@ fieldset:disabled .btn {
 }
 
 .btn-link:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .btn-link.disabled,
@@ -4830,7 +4830,7 @@ fieldset:disabled .btn {
 
 .nav-link:focus,
 .nav-link:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .nav-link.disabled {
@@ -5572,6 +5572,10 @@ fieldset:disabled .btn {
     border-radius: .75rem
 }
 
+.card-shadow {
+    box-shadow: 0px 0px 30px -4px rgba(0, 0, 0, 0.06);
+}
+
 .card>hr {
     margin-right: 0;
     margin-left: 0
@@ -5908,12 +5912,26 @@ fieldset:disabled .btn {
 }
 
 .page-link {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--bs-secondary);
     position: relative;
     display: block;
-    color: #677788;
     background-color: #fff;
     border: 0 solid #e7eaf3;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.page-link.next {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--bs-acqua-dark);
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -5924,14 +5942,14 @@ fieldset:disabled .btn {
 
 .page-link:hover {
     z-index: 2;
-    color: #1366ff;
+    color: var(--bs-teal);
     background-color: #f8fafd;
     border-color: #e7eaf3
 }
 
 .page-link:focus {
     z-index: 3;
-    color: #1366ff;
+    color: var(--bs-teal);
     background-color: #f8fafd;
     outline: 0;
     box-shadow: 0 0 1rem 0 rgba(140, 152, 164, .25)
@@ -5943,13 +5961,23 @@ fieldset:disabled .btn {
 
 .page-item.active .page-link {
     z-index: 3;
-    color: #fff;
-    background-color: #377dff;
-    border-color: #377dff
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--bs-secondary);
+    background-color: #fff;
+    border-color: #e7eaf3
 }
 
 .page-item.disabled .page-link {
-    color: #8c98a4;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E636EBD;
     pointer-events: none;
     background-color: #fff;
     border-color: #e7eaf3
@@ -9749,6 +9777,10 @@ fieldset:disabled .btn {
 
 .fw-normal {
     font-weight: 400 !important
+}
+
+.fw-normal-plus {
+    font-weight: 500 !important
 }
 
 .fw-bold {
@@ -18467,7 +18499,7 @@ input[type=number] {
 }
 
 .alert-soft-primary .alert-link:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .alert-soft-secondary {
@@ -19330,7 +19362,7 @@ input[type=number] {
 }
 
 .breadcrumb .breadcrumb-link:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .btn-link {
@@ -19430,7 +19462,7 @@ input[type=number] {
 .btn-check:focus+.btn-white,
 .btn-white:focus,
 .btn-white:hover {
-    color: #1366ff;
+    color: var(--bs-teal);
     box-shadow: 0 3px 6px -2px rgba(140, 152, 164, .25)
 }
 
@@ -19910,7 +19942,7 @@ input[type=number] {
 }
 
 .btn-group-segment .btn:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .btn-group-segment>.btn-group:not(:first-child)>.btn,
@@ -20827,7 +20859,7 @@ input[type=number] {
 }
 
 .card table tr th {
-    font-weight: 400
+    font-weight: var(--fw-bold)
 }
 
 .card-footer {
@@ -22943,7 +22975,7 @@ label.form-control {
 .form-select-light,
 .input-group-light .form-control,
 .input-group-light .form-select {
-    background-color: #f6f7fa;
+    background-color: rgba(239, 239, 239, 0.5);
     box-shadow: none
 }
 
@@ -22955,7 +22987,7 @@ label.form-control {
 .input-group-light .form-control[readonly],
 .input-group-light .form-select:disabled,
 .input-group-light .form-select[readonly] {
-    background-color: transparent
+    background-color: #DCF5F3;
 }
 
 .form-control-hover-light.focus,
@@ -23398,7 +23430,7 @@ label.form-control {
 }
 
 .list-separator .list-separator-link:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .list-separator-light .list-inline-item::after {
@@ -24058,7 +24090,7 @@ label.form-control {
 }
 
 .nav-vertical.nav-pills .nav-item.show .nav-link[aria-expanded]:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .nav-vertical.nav-pills .nav-link {
@@ -24223,7 +24255,7 @@ label.form-control {
 
 .nav-compact .nav-item>.nav-link.active,
 .nav-compact .nav-item>.nav-link:hover {
-    color: #1366ff;
+    color: var(--bs-teal);
     background-color: rgba(55, 125, 255, .1)
 }
 
@@ -24291,12 +24323,12 @@ label.form-control {
 
 .nav-compact-icon .nav-icon.active,
 .nav-compact-icon .nav-icon:hover {
-    color: #1366ff;
+    color: var(--bs-teal);
     background-color: rgba(55, 125, 255, .1)
 }
 
 .nav-compact-icon .nav-link.active .nav-icon {
-    color: #1366ff;
+    color: var(--bs-teal);
     background-color: rgba(55, 125, 255, .1)
 }
 
@@ -24596,7 +24628,7 @@ label.form-control {
 }
 
 .navbar .nav-item:hover>.nav-link {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .navbar .dropdown-menu {
@@ -31304,10 +31336,12 @@ label.form-control {
 }
 
 .table thead th {
-    color: #677788;
-    font-size: .74375rem;
-    font-weight: 600;
-    text-transform: uppercase
+    color: var(--bs-acqua-dark);
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-size: 16px;
+    font-weight: var(--fw-bold);
+    text-transform: none;
 }
 
 .table>:not(:last-child)>:last-child>* {
@@ -31352,7 +31386,7 @@ label.form-control {
 }
 
 .thead-light th {
-    background-color: #f8fafd
+    background-color: rgba(220, 245, 243, 0.68);
 }
 
 .table-lg>:not(caption)>*>* {
@@ -31457,32 +31491,32 @@ label.form-control {
 
 .link-primary:focus,
 .link-primary:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .link-secondary:focus,
 .link-secondary:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .link-success:focus,
 .link-success:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .link-info:focus,
 .link-info:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .link-warning:focus,
 .link-warning:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .link-danger:focus,
 .link-danger:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .link-light:focus,
@@ -31492,7 +31526,7 @@ label.form-control {
 
 .link-dark:focus,
 .link-dark:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .link-collapse[aria-expanded=false] .link-collapse-default {
@@ -31526,14 +31560,14 @@ label.form-control {
 }
 
 .text-dark[href]:hover {
-    color: #1366ff !important
+    color: var(--bs-teal) !important
 }
 
 .link-secondary[href]:hover,
 .text-body[href]:hover,
 .text-muted[href]:hover,
 .text-secondary[href]:hover {
-    color: #1366ff !important
+    color: var(--bs-teal) !important
 }
 
 a:hover .text-inherit {
@@ -31757,7 +31791,7 @@ a:hover .text-inherit {
 }
 
 .hs-nav-scroller-horizontal .hs-nav-scroller-arrow-link:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .hs-nav-scroller-horizontal .hs-nav-scroller-arrow-prev {
@@ -32264,7 +32298,7 @@ a:hover .text-inherit {
 .daterangepicker .cancelBtn:active,
 .daterangepicker .cancelBtn:focus,
 .daterangepicker .cancelBtn:hover {
-    color: #1366ff;
+    color: var(--bs-teal);
     box-shadow: 0 3px 6px -2px rgba(140, 152, 164, .25)
 }
 
@@ -32289,7 +32323,7 @@ a:hover .text-inherit {
 }
 
 .daterangepicker .ranges li:hover {
-    color: #1366ff;
+    color: var(--bs-teal);
     background-color: transparent
 }
 
@@ -32316,7 +32350,7 @@ a:hover .text-inherit {
 .daterangepicker select.hourselect:hover,
 .daterangepicker select.minuteselect:hover,
 .daterangepicker select.secondselect:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 @media (max-width:776.98px) {
@@ -32970,7 +33004,7 @@ a:hover .text-inherit {
 .fullcalendar-custom.fc .fc-button:active,
 .fullcalendar-custom.fc .fc-button:focus,
 .fullcalendar-custom.fc .fc-button:hover {
-    color: #1366ff;
+    color: var(--bs-teal);
     box-shadow: 0 3px 6px -2px rgba(140, 152, 164, .25)
 }
 
@@ -33017,7 +33051,7 @@ a:hover .text-inherit {
 }
 
 .fullcalendar-custom-timegrid .fc-col-header-cell-cushion:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .fullcalendar-custom-timegrid .fc-timegrid-event {
@@ -33094,7 +33128,7 @@ a:hover .text-inherit {
 }
 
 .fullcalendar-custom.fc .fc-popover-close:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .fullcalendar-event-popover {
@@ -33301,7 +33335,7 @@ a:hover .text-inherit {
 }
 
 .quill-custom .ql-snow .ql-action:hover {
-    background-color: #1366ff
+    background-color: var(--bs-teal)
 }
 
 .quill-custom .ql-snow .ql-tooltip a.ql-action::after,
@@ -33321,7 +33355,7 @@ a:hover .text-inherit {
 }
 
 .quill-custom .ql-snow .ql-tooltip a.ql-remove:hover {
-    color: #1366ff;
+    color: var(--bs-teal);
     box-shadow: 0 3px 6px -2px rgba(140, 152, 164, .25)
 }
 
@@ -33660,7 +33694,7 @@ a:hover .text-inherit {
 
 .jvm-zoom-btn:focus,
 .jvm-zoom-btn:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .jvm-zoom-btn.jvm-zoomin {
@@ -33719,7 +33753,7 @@ a:hover .text-inherit {
 }
 
 .leaflet-bar a:hover {
-    color: #1366ff
+    color: var(--bs-teal)
 }
 
 .leaflet-touch .leaflet-bar a {
