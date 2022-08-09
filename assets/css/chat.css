@@ -3,7 +3,6 @@
 -----------------------------------------------*/
 .card-chat {
     height: calc(100vh - 4.3125rem - 0.625rem);
-    z-index: 1;
 }
 
 .card-chat .card-body {
@@ -54,7 +53,7 @@
 
 .contacts-list {
     height: calc(100% - 2rem);
-    border-right: 1px solid var(--falcon-border-color);
+    border-right: 1px solid var(--bs-gray-light);
     overflow-y: auto;
     width: 100%;
 }
@@ -69,6 +68,11 @@
     cursor: pointer;
     border-top: 1px solid transparent;
     background-color: var(--falcon-chat-contact-bg);
+}
+
+.chat-contact.active {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity));
 }
 
 .chat-contact:after {
@@ -95,7 +99,7 @@
 
 .chat-contact.active:not(:first-child),
 .chat-contact.active+.chat-contact {
-    border-top: 1px solid var(--falcon-border-color);
+    border-top: 1px solid var(--bs-gray-light);
 }
 
 .chat-contact .hover-actions {
@@ -122,7 +126,7 @@
 }
 
 .message-time {
-    color: var(--bs-gray-400);
+    color: var(--bs-secondary);
 }
 
 .chat-contact-content {
@@ -150,8 +154,8 @@
 
 .contacts-search-wrapper {
     position: relative;
-    border-top: 1px solid var(--falcon-border-color);
-    border-right: 1px solid var(--falcon-border-color);
+    border-top: 1px solid var(--bs-gray-light);
+    border-right: 1px solid var(--bs-gray-light);
     background-color: var(--falcon-chat-contact-bg);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -191,7 +195,7 @@
   -----------------------------------------------*/
 .chat-content-header {
     padding: 1rem;
-    border-bottom: 1px solid var(--falcon-border-color);
+    border-bottom: 1px solid var(--bs-gray-light);
 }
 
 .chat-content-body {
@@ -213,6 +217,14 @@
     margin-bottom: 0.25rem;
     display: inline-block;
     position: relative;
+    border-radius: 0 15px 15px 15px !important;
+    padding: 15px 18px !important;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular);
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--bs-body-color);
 }
 
 .message-settings {
@@ -239,7 +251,7 @@
     width: 15rem;
     right: -15rem;
     background-color: var(--bs-gray-100);
-    border-left: 1px solid var(--falcon-border-color);
+    border-left: 1px solid var(--bs-gray-light);
     z-index: 10;
     top: 4.25rem;
     height: calc(100% - 4.25rem);
@@ -277,15 +289,21 @@
 
 .btn-send {
     z-index: 2;
-    padding: 0;
-    background-color: transparent;
-    color: var(--bs-gray-500);
     outline: none !important;
-    margin-right: 1rem;
+    margin: 1rem;
+    padding: 10px 20px;
+    background: rgba(46, 99, 110, 0.74);
+    border-radius: 7px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 .chat-editor-area {
-    border-top: 1px solid var(--falcon-border-color);
+    border-top: 1px solid var(--bs-gray-light);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -513,7 +531,7 @@
     padding: 1rem;
     border-radius: 0.375rem;
     background-color: var(--falcon-kanban-item-bg);
-    border: 1px solid var(--falcon-border-color);
+    border: 1px solid var(--bs-gray-light);
     margin-top: 1rem;
 }
 

@@ -19,6 +19,7 @@
     --bs-cyan: #09a5be;
     --bs-white: #fff;
     --bs-gray: #8c98a4;
+    --bs-gray-light: #EFF0F6;
     --bs-gray-dark: #858585;
     --bs-gray-100: #f9fafc;
     --bs-gray-200: #f8fafd;
@@ -262,7 +263,7 @@ sup {
 }
 
 a {
-    color: #377dff;
+    color: var(--bs-teal);
     text-decoration: none
 }
 
@@ -501,6 +502,10 @@ iframe {
 summary {
     display: list-item;
     cursor: pointer
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 progress {
