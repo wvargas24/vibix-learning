@@ -18606,9 +18606,9 @@ input[type=number] {
     border-radius: .5rem
 }
 
-.avatar:not(img) {
+/* .avatar:not(img) {
     background-color: #fff
-}
+} */
 
 .avatar-img {
     max-width: 100%;

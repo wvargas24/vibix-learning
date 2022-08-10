@@ -1680,6 +1680,66 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- <div class="d-flex p-3">
+                                        <div class="flex-1 d-flex justify-content-end">
+                                            <div class="w-100 w-xxl-75">
+                                                <div class="hover-actions-trigger d-flex flex-end-center">
+                                                    <ul class="hover-actions position-relative list-inline mb-0 text-400 me-2">
+                                                        <li class="list-inline-item">
+                                                            <a class="chat-option" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Forward">
+                                                                <svg class="svg-inline--fa fa-share fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="share" role="img"
+                                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                                                    <path fill="currentColor"
+                                                                          d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z">
+                                                                    </path>
+                                                                </svg>
+
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a class="chat-option" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Archive">
+                                                                <i class="bi bi-archive-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a class="chat-option" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Edit">
+                                                                <i class="bi bi-pencil-square"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a class="chat-option" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Remove">
+                                                                <i class="bi bi-trash-fill"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="bg-primary p-2 rounded-2 chat-message light">
+                                                        <div class="mic-container mx-auto w-100">
+                                                            <div class="recording-box recorder">
+                                                                <div class="toolbar">
+                                                                    <button class="js-record btn button--record" style="display: none;">
+                                                                        <i class="bi bi-mic-fill" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <button class="js-stop btn button--stop" style="display: none;">
+                                                                        <i class="bi bi-stop-fill"></i>
+                                                                    </button>
+                                                                    <button data-playing="false" class="js-play btn button--play" role="switch" aria-checked="false">
+                                                                        <i class="bi bi-play-fill" aria-hidden="true"></i>
+                                                                    </button>
+                                                                    <audio src="//s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous" class="js-audio audio audio--hidden"></audio>
+                                                                </div>
+                                                                <div class="waveform">
+                                                                    <canvas class="js-canvas waveform__canvas"></canvas>
+                                                                </div>
+                                                                <div class="js-time">1:15</div>
+                                                            </div>
+                                                            <div class="js-message message"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-400 fs-6 text-end">11:54 am</div>
+                                            </div>
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -4786,6 +4846,27 @@
                         </div>
                         <form class="chat-editor-area">
                             <div class="emojiarea-editor outline-none scrollbar" contenteditable="true" placeholder="Type a message"></div>
+                            <div class="mic-container">
+                                <div class="recording-box">
+                                    <div class="toolbar">
+                                        <button class="js-record btn button--record">
+                                            <i class="bi bi-mic-fill" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="js-stop btn button--stop" style="display: none;">
+                                            <i class="bi bi-stop-fill"></i>
+                                        </button>
+                                        <button class="js-play btn button--play button--disabled" style="display: none;">
+                                            <i class="bi bi-play-fill" aria-hidden="true"></i>
+                                        </button>
+                                        <audio class="js-audio audio audio--hidden" controls />
+                                    </div>
+                                    <div class="waveform">
+                                        <canvas class="js-canvas waveform__canvas"></canvas>
+                                    </div>
+                                    <div class="js-time"></div>
+                                </div>
+                                <div class="js-message message"></div>
+                            </div>
                             <input class="d-none" type="file" id="chat-file-upload">
                             <label class="chat-file-upload cursor-pointer" for="chat-file-upload">
                                 <i class="bi bi-paperclip"></i>
@@ -4801,120 +4882,6 @@
         </div>
     </main>
 
-    <!-- View Reflection Modal -->
-    <div class="modal fade" id="viewReflectionModal" tabindex="-1" aria-labelledby="viewReflectionModalLabel" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="viewReflectionModalLabel">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-
-                        </button>
-                        <span> Reflection</span>
-                    </h5>
-                </div>
-
-                <!-- Body -->
-                <div class="modal-body">
-                    <!-- Step Form -->
-                    <div class="js-step-form">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="mb-4">
-                                    <label for="">Date</label>
-                                    <input id="" type="text" class="form-control form-control-light" disabled value="6/10/2022">
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="mb-4">
-                                    <label for="">Time</label>
-                                    <input id="" type="text" class="form-control form-control-light" disabled value="5:20 PM">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="mb-4">
-                                    <label for="">Student</label>
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar avatar-circle">
-                                            <img class="avatar-img" src="../assets/images/avatar-03.png" alt="Image Description">
-                                        </div>
-                                        <div class="ms-3">
-                                            <span class="d-block mb-0 fw-normal-plus">Esther Howard</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="mb-4">
-                                    <label class="d-block">Type of event</label>
-                                    <span class="badge">Support</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="mb-4">
-                                    <label for="">Observations</label>
-                                    <textarea id="support-student-observations" name="" class="form-control form-control-light" id="" placeholder="Write a quick observation of what happened..." cols="30" rows="7"
-                                              disabled>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. 
-                                    </textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="mb-4">
-                                    <label for="">Reflection</label>
-                                    <textarea id="support-student-observations" name="" class="form-control form-control-light" id="" placeholder="Write a quick observation of what happened..." cols="30" rows="7"
-                                              disabled>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. 
-                                    </textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="mic-container mx-auto w-100">
-                                <div class="recording-box recorder">
-                                    <div class="toolbar">
-                                        <button class="js-record btn button--record" style="display: none;">
-                                            <i class="bi bi-mic-fill" aria-hidden="true">
-
-                                            </i>
-                                        </button>
-                                        <button class="js-stop btn button--stop" style="display: none;">
-                                            <i class="bi bi-stop-fill">
-
-                                            </i>
-                                        </button>
-                                        <button data-playing="false" class="js-play btn button--play" role="switch" aria-checked="false">
-                                            <i class="bi bi-play-fill" aria-hidden="true">
-
-                                            </i>
-                                        </button>
-                                        <audio src="//s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3" crossorigin="anonymous" class="js-audio audio audio--hidden">
-
-                                        </audio>
-                                    </div>
-                                    <div class="waveform">
-                                        <canvas class="js-canvas waveform__canvas">
-
-                                        </canvas>
-                                    </div>
-                                    <div class="js-time">1:15</div>
-                                </div>
-                                <div class="js-message message">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Step Form -->
-                </div>
-                <!-- End Body -->
-            </div>
-        </div>
-    </div>
     <!-- Confirm Remove Voice Note Modal -->
     <div class="modal fade modalConfirm" id="removeVoiceNoteModal" tabindex="-1" aria-labelledby="removeVoiceNoteModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-sm">
@@ -4935,13 +4902,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/tom-select@2.1.0/dist/js/tom-select.complete.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <!-- <script src="/assets/js/vendor.min.js">
         
     </script> -->
     <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="../assets/js/theme.min.js"></script>
     <script src="../assets/js/script.js"></script>
-
+    <script src="../assets/js/mic.js"></script>
+    <script src="../assets/js/audioplayer.js"></script>
 </body>
 
 </html>
