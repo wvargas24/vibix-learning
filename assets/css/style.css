@@ -719,6 +719,19 @@ label {
     width: 100%;
 }
 
+.foot-table .tom-select-custom .ts-dropdown .option {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.btn-toBack {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--bs-body-color);
+}
+
 @media (min-width: 576px) {
     .contacts-list {
         height: calc(100% - 2.063rem);

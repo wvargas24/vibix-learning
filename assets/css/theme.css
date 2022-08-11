@@ -39,7 +39,7 @@
     --bs-light: #f9fafc;
     --bs-dark: #132144;
     --bs-black: #000000;
-    --bs-acqua-dark: #2E636E;
+    --bs-acqua-dark: #2e636e;
     --bs-link-hover-color: #00c9a7;
     --bs-button-hover: #1A968A;
     --bs-button-disabled: #2E636EBD;
@@ -55,12 +55,15 @@
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 20, 33, 43;
     --bs-body-bg-rgb: 255, 255, 255;
+    --bs-acqua-dark-rgb: 46, 99, 110;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-gradient: linear-gradient(151.07deg, rgba(156, 224, 194, 0) -75.93%, #9CE0C2 95.65%);
+    --bs-gradient2: linear-gradient(330.5deg, #4ECEC2 -3.26%, #9CE0C2 102.87%);
+    --bs-gradient3: linear-gradient(329.09deg, #2E636E -2.45%, #4ECEC2 106.48%);
     --bs-body-font-family: 'Raleway', sans-serif;
     --bs-secondary-font-family: 'Poppins', sans-serif;
-    --bs-body-font-size: 0.875rem;
+    --bs-body-font-size: 16px;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
     --bs-body-color: #14212B;
@@ -8415,6 +8418,10 @@ fieldset:disabled .btn {
     border-width: 5px !important
 }
 
+.w-220 {
+    width: 220px;
+}
+
 .w-25 {
     width: 25% !important
 }
@@ -9905,6 +9912,11 @@ fieldset:disabled .btn {
     color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important
 }
 
+.text-acqua-dark {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-acqua-dark-rgb), var(--bs-text-opacity)) !important
+}
+
 .text-black {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important
@@ -10045,6 +10057,14 @@ fieldset:disabled .btn {
     background-image: var(--bs-gradient) !important
 }
 
+.bg-gradient2 {
+    background-image: var(--bs-gradient2) !important
+}
+
+.bg-gradient3 {
+    background-image: var(--bs-gradient3) !important
+}
+
 .user-select-all {
     -webkit-user-select: all !important;
     -moz-user-select: all !important;
@@ -10092,6 +10112,10 @@ fieldset:disabled .btn {
 
 .rounded-3 {
     border-radius: .75rem !important
+}
+
+.rounded-4 {
+    border-radius: 20px !important
 }
 
 .rounded-circle {
