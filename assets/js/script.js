@@ -112,18 +112,21 @@
             }
         });
 
-        const button = document.querySelector('.emoji-icon');
-
-        const picker = new EmojiButton();
-
-        button.addEventListener('click', () => {
-            picker.togglePicker(button);
         
-        });
+        if ($('.emoji-icon').length > 0) {
+            const button = document.querySelector('.emoji-icon');
+            const picker = new EmojiButton();
 
-        picker.on('emoji', emoji => {
-            document.querySelector('.emojiarea-editor').innerHTML += emoji;
-        });
+            button.addEventListener('click', () => {
+                picker.togglePicker(button);
+            
+            });
+
+            picker.on('emoji', emoji => {
+                document.querySelector('.emojiarea-editor').innerHTML += emoji;
+            });
+        }
+        
     });
     
 })()
