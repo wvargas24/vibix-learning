@@ -61,6 +61,7 @@
     --bs-gradient: linear-gradient(151.07deg, rgba(156, 224, 194, 0) -75.93%, #9CE0C2 95.65%);
     --bs-gradient2: linear-gradient(330.5deg, #4ECEC2 -3.26%, #9CE0C2 102.87%);
     --bs-gradient3: linear-gradient(329.09deg, #2E636E -2.45%, #4ECEC2 106.48%);
+    --bs-gradient-orange: linear-gradient(333.43deg, #F26903 -1.45%, #FFC89F 177.81%);
     --bs-body-font-family: 'Raleway', sans-serif;
     --bs-secondary-font-family: 'Poppins', sans-serif;
     --bs-body-font-size: 16px;
@@ -9915,6 +9916,13 @@ fieldset:disabled .btn {
 .text-acqua-dark {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-acqua-dark-rgb), var(--bs-text-opacity)) !important
+}
+
+.bi-gradient-orange {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFC89F), to(#f26903));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .text-black {
