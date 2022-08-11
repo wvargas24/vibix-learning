@@ -356,7 +356,7 @@
                         <div id="navbarVerticalMenuPagesMenu">
 
                             <div class="nav-item">
-                                <a class="nav-link " href="../teacher/teacher-students.html" data-placement="left">
+                                <a class="nav-link active" href="../teacher/teacher-students.html" data-placement="left">
                                     <i class="bi-people-fill nav-icon"></i>
                                     <span class="nav-link-title">Students</span>
                                 </a>
@@ -370,7 +370,7 @@
                             </div>
 
                             <div class="nav-item">
-                                <a class="nav-link active" href="../teacher/teacher-history.html" data-placement="left">
+                                <a class="nav-link" href="../teacher/teacher-history.html" data-placement="left">
                                     <i class="bi-list-ul nav-icon"></i>
                                     <span class="nav-link-title">History</span>
                                 </a>
@@ -406,7 +406,7 @@
                     <div class="col">
                         <h1 class="page-internal-header-title">
                             <a href="../teacher/index.html">
-                                <i class="bi bi-arrow-left"></i> History
+                                <i class="bi bi-arrow-left"></i> Students
                             </a>
                         </h1>
                     </div>
@@ -445,6 +445,7 @@
 
                         <!-- Dropdown -->
                         <div class="dropdown">
+
                             <button type="button" class="btn btn-light btn-sm w-100" id="usersFilterDropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                 Filters <i class="bi bi-funnel-fill"></i>
                                 <!-- <span class="badge bg-soft-dark text-dark rounded-circle ms-1">2</span> -->
@@ -459,113 +460,57 @@
 
                                             <div class="row">
                                                 <div class="col-12 mb-4">
-                                                    <label>Student</label>
+                                                    <label>Teacher’s class</label>
 
                                                     <!-- Select -->
                                                     <div class="tom-select-custom">
                                                         <select class="js-select js-datatable-filter form-select" data-target-column-index="2" data-hs-tom-select-options='{
-                                                            "placeholder": "Select student",
+                                                            "placeholder": "Select",
                                                             "searchInDropdown": false,
                                                             "hideSearch": true,
                                                             "dropdownWidth": "100%"
                                                             }' id="tomselect-2" tabindex="-1" hidden="hidden">
-                                                            <option value="-1" selected="true">Select student</option>
+                                                            <option value="null" selected="true">Select</option>
 
-                                                            <option value="Jane Cooper" data-option-template='
+                                                            <option value="Kristin Watson" data-option-template='
                                                                     <span class="d-flex align-items-center">
                                                                         <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-01.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Jane Cooper</span>
+                                                                        <span class="flex-grow-1 ms-2">Kristin Watson</span>
                                                                     </span>
                                                                 '>
-                                                                Jane Cooper
+                                                                Kristin Watson
                                                             </option>
-                                                            <option value="Wade Warren" data-option-template='
-                                                                    <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-02.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Wade Warren</span>
-                                                                    </span>
-                                                                '>
-                                                                Wade Warren
-                                                            </option>
-                                                            <option value="Jane Williams" data-option-template='
-                                                                    <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-03.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Jane Williams</span>
-                                                                    </span>
-                                                                '>
-                                                                Jane Williams
-                                                            </option>
-                                                            <option value="Esther Howard" data-option-template='
-                                                                    <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-03.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Esther Howard</span>
-                                                                    </span>
-                                                                '>
-                                                                Esther Howard
-                                                            </option>
-                                                            <option value="Cameron Williamson" data-option-template='
+                                                            <option value="Albert Flores" data-option-template='
                                                                     <span class="d-flex align-items-center">
                                                                         <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-01.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Cameron Williamson</span>
+                                                                        <span class="flex-grow-1 ms-2">Albert Flores</span>
                                                                     </span>
                                                                 '>
-                                                                Cameron Williamson
+                                                                Albert Flores
                                                             </option>
-                                                            <option value="Fynley Oconnor" data-option-template='
-                                                                    <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-02.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Fynley Oconnor</span>
-                                                                    </span>
-                                                                '>
-                                                                Fynley Oconnor
-                                                            </option>
-                                                            <option value="Halimah Croft" data-option-template='
-                                                                    <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-03.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Halimah Croft</span>
-                                                                    </span>
-                                                                '>
-                                                                Halimah Croft
-                                                            </option>
-                                                            <option value="Darlene Garrison" data-option-template='
-                                                                    <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-04.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Darlene Garrison</span>
-                                                                    </span>
-                                                                '>
-                                                                Darlene Garrison
-                                                            </option>
-                                                            <option value="Matas Clark" data-option-template='
+                                                            <option value="Dianne Russell" data-option-template='
                                                                     <span class="d-flex align-items-center">
                                                                         <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-01.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Matas Clark</span>
+                                                                        <span class="flex-grow-1 ms-2">Dianne Russell</span>
                                                                     </span>
                                                                 '>
-                                                                Matas Clark
+                                                                Dianne Russell
                                                             </option>
-                                                            <option value="Arron Molloy" data-option-template='
+                                                            <option value="Layan Goddard" data-option-template='
                                                                     <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-02.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Arron Molloy</span>
+                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-01.png" alt="Avatar" />
+                                                                        <span class="flex-grow-1 ms-2">Layan Goddard</span>
                                                                     </span>
                                                                 '>
-                                                                Arron Molloy
+                                                                Layan Goddard
                                                             </option>
-                                                            <option value="Euan Madden" data-option-template='
+                                                            <option value="Kodi Warren" data-option-template='
                                                                     <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-03.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Euan Madden</span>
+                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-01.png" alt="Avatar" />
+                                                                        <span class="flex-grow-1 ms-2">Kodi Warren</span>
                                                                     </span>
                                                                 '>
-                                                                Euan Madden
-                                                            </option>
-                                                            <option value="Euan Madden" data-option-template='
-                                                                    <span class="d-flex align-items-center">
-                                                                        <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-04.png" alt="Avatar" />
-                                                                        <span class="flex-grow-1 ms-2">Euan Madden</span>
-                                                                    </span>
-                                                                '>
-                                                                Euan Madden
+                                                                Kodi Warren
                                                             </option>
                                                         </select>
                                                     </div>
@@ -574,7 +519,7 @@
                                                 <!-- End Col -->
 
                                                 <div class="col-12 mb-4">
-                                                    <label>Type of event</label>
+                                                    <label>Grade</label>
 
                                                     <!-- Select -->
                                                     <div class="tom-select-custom">
@@ -584,11 +529,11 @@
                                                             "hideSearch": true,
                                                             "dropdownWidth": "100%"
                                                             }' id="tomselect-1" tabindex="-1" hidden="hidden">
-                                                            <option value="-1" selected="true">Select</option>
+                                                            <option value="null" selected="true">Select</option>
 
-                                                            <option value="Support student">Support student</option>
-                                                            <option value="Time out">Time out</option>
-                                                            <option value="Refer to service">Refer to service</option>
+                                                            <option value="9th Grade">9th Grade</option>
+                                                            <option value="10th Grade">10th Grade</option>
+                                                            <option value="11th Grade">11th Grade</option>
                                                         </select>
                                                         <!-- End Select -->
                                                     </div>
@@ -652,17 +597,17 @@
                             }' role="grid" aria-describedby="datatable_info">
                             <thead class="thead-light">
                                 <tr role="row">
-                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="Date: activate to sort column ascending">
-                                        Date
+                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending">
+                                        Name
                                     </th>
-                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="Time: activate to sort column ascending">
-                                        Time
+                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="VIP: activate to sort column ascending">
+                                        VIP
                                     </th>
-                                    <th class="table-column-ps-0 sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="Student: activate to sort column ascending">
-                                        Student
+                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="Teacher’s class: activate to sort column ascending">
+                                        Teacher’s class
                                     </th>
-                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="Type of event: activate to sort column ascending">
-                                        Type of event
+                                    <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" aria-label="Grade level: activate to sort column ascending">
+                                        Grade level
                                     </th>
                                     <th class="sorting_disabled" rowspan="1" colspan="1" aria-label=""></th>
                                 </tr>
@@ -670,247 +615,455 @@
 
                             <tbody>
                                 <tr role="row" class="odd">
-                                    <td>6/08/2022</td>
-                                    <td>3:15 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-01.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Jane Cooper <i class="bi-patch-check-fill text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title=""
-                                                       data-bs-original-title="Top endorsed" aria-label="Top endorsed"></i></span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Leslie Alexander</span>
                                             </div>
-                                        </a>
+                                        </div>
+                                    </td>
+                                    <td>NO VIP</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Kristin Watson</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Support student</span>
+                                        9th Grade
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end">
-                                            <i class="bi-pencil-fill me-1"></i> Write Reflection
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="even">
-                                    <td>6/09/2022</td>
-                                    <td>12:25 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-02.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Wade
-                                                    Warren</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Jenny Wilson</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Refer to service</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Ralph Edwards</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end">
-                                            <i class="bi-pencil-fill me-1"></i> Write Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Kristin Watson</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        10th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="odd">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-03.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Esther
-                                                    Howard</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Guy Hawkins</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Support student</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Darlene Robertson</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Albert Flores</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        11th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="even">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-04.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Cameron Williamson</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Robert Fox</span>
                                             </div>
-                                        </a>
+                                        </div>
+                                    </td>
+                                    <td>NO VIP</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Albert Flores</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Time out</span>
+                                        10th Grade
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="odd">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-01.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Fynley Oconnor</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Jacob Jones</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Support student</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Devon Lane</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Albert Flores</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        9th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="even">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-02.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">EHalimah Croft</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Arlene McCoy</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Support student</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Jerome Bell</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Albert Flores</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        9th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="odd">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-03.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Darlene Garrison</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Brooklyn Simmons</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Refer to service</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Savannah Nguyen</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Kristin Watson</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        9th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="even">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-04.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Matas Clark</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Kathryn Murphy</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Support student</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Marvin McKinney</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Dianne Russell</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        11th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="odd">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-01.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Arron Molloy</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Theresa Webb</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Time out</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Savannah Nguyen</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Dianne Russell</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        11th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="even">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-02.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Euan Madden</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Courtney Henry</span>
                                             </div>
-                                        </a>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span class="badge">Support student</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Ralph Edwards</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Dianne Russell</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        10th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
                                 <tr role="row" class="odd">
-                                    <td>6/10/2022</td>
-                                    <td>11:40 PM</td>
-                                    <td class="table-column-ps-0">
-                                        <a class="d-flex align-items-center" href="./user-profile.html">
-                                            <div class="avatar avatar-circle">
-                                                <img class="avatar-img" src="../assets/images/avatar-03.png" alt="Image Description">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
                                             </div>
                                             <div class="ms-3">
-                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Gus Hail</span>
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Malia Cooper</span>
                                             </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Conah Rosario</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Layan Goddard</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        9th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
+                                </tr>
+                                <tr role="row" class="even">
                                     <td>
-                                        <span class="badge">Support student</span>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-06.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Menna Bridges</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>NO VIP</td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar avatar-sm avatar-circle">
+                                                <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                            </div>
+                                            <div class="ms-3">
+                                                <span class="d-block fw-normal-plus h5 text-inherit mb-0">Kodi Warren</span>
+                                            </div>
+                                        </div>
                                     </td>
                                     <td>
-                                        <a href="../teacher/new-reflection.html" class="btn btn-success btn-sm float-end" data-bs-toggle="modal" data-bs-target="#viewReflectionModal">
-                                            <i class="bi bi-eye-fill me-1"></i> View Reflection
+                                        9th Grade
+                                    </td>
+                                    <td>
+                                        <a href="../teacher/student-profile.html" class="btn btn-success btn-sm float-end">
+                                            <i class="bi-pencil-fill me-1"></i> View profile
                                         </a>
                                     </td>
                                 </tr>
@@ -930,8 +1083,8 @@
                                 <!-- Select -->
                                 <div class="tom-select-custom">
                                     <select id="datatableEntries" class="js-select form-select form-select-borderless w-auto tomselected" autocomplete="off" data-hs-tom-select-options='{
-                                            "searchInDropdown": false,
-                                            "hideSearch": true
+                                        "searchInDropdown": false,
+                                        "hideSearch": true
                                         }' tabindex="-1" hidden="hidden">
                                         <option value="10" selected="true">10</option>
                                         <option value="25">25</option>
@@ -947,7 +1100,7 @@
                                 <!-- Pagination Quantity -->
                                 <span id="datatableWithPaginationInfoTotalQty"></span>
 
-                                <span class="text-secondary ms-2"> Reflections</span>
+                                <span class="text-secondary ms-2"> Students</span>
 
                             </div>
                         </div>

@@ -71,8 +71,20 @@ $(document).on('ready', function () {
         targetColumnIndex = $this.data('target-column-index');
 
         if (elVal === 'null') elVal = ''
-
+        console.log(elVal);
         datatable.column(targetColumnIndex).search(elVal).draw();
+        $('.js-datatable-clear-filter').css('display','flex');
     });
+    
+    $('.js-datatable-clear-filter').on('click', function() {
+        $(".js-datatable-filter").each(function( index ) {
+            var $this = $(this);
+            targetColumnIndex = $this.data('target-column-index');
+            datatable.column(targetColumnIndex).search('').draw();
+            $this.val('');
+        });
+        $(this).css('display','none');
+    });
+
 });
     
