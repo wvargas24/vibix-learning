@@ -732,6 +732,24 @@ label {
     color: var(--bs-body-color);
 }
 
+.gender {
+    font-family: var(--bs-body-font-family);
+    font-style: italic;
+    font-weight: var(--fw-semibold);
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--bs-acqua-dark);
+}
+
+.position {
+    font-family: var(--bs-body-font-family);
+    font-style: italic;
+    font-weight: var(--fw-semibold);
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--bs-body-color);
+}
+
 @media (min-width: 576px) {
     .contacts-list {
         height: calc(100% - 2.063rem);
