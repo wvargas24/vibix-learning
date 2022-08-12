@@ -28,14 +28,20 @@
 <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset">
     <script src="../assets/js/hs-navbar-vertical-aside-mini-cache.js"></script>
     <!-- ========== HEADER ========== -->
-    <header id="header" class="navbar navbar-vertical-aside navbar-expand-lg navbar-fixed navbar-height navbar-container navbar-bordered bg-white">
+    <header id="header" class="navbar navbar-container navbar-expand-lg navbar-sidebar-detached navbar-fixed-lg navbar-height navbar-bordered bg-white">
         <div class="navbar-nav-wrap">
             <!-- Logo -->
             <a class="navbar-brand" href="../teacher/index.html" aria-label="Front">
                 <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
             </a>
-            <!-- End Logo -->
-
+            <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler" style="opacity: 1;">
+                <i class="bi-arrow-bar-left navbar-toggler-short-align"
+                   data-bs-template="<div class=&quot;tooltip d-none d-md-block&quot; role=&quot;tooltip&quot;><div class=&quot;arrow&quot;></div><div class=&quot;tooltip-inner&quot;></div></div>"
+                   data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Collapse" aria-label="Collapse"></i>
+                <i class="bi-arrow-bar-right navbar-toggler-full-align"
+                   data-bs-template="<div class=&quot;tooltip d-none d-md-block&quot; role=&quot;tooltip&quot;><div class=&quot;arrow&quot;></div><div class=&quot;tooltip-inner&quot;></div></div>"
+                   data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Expand" aria-label="Expand"></i>
+            </button>
             <div class="navbar-nav-wrap-content-end">
                 <!-- Navbar -->
                 <ul class="navbar-nav">
@@ -330,76 +336,79 @@
     </header>
     <!-- END HEADER -->
 
-    <!-- Navbar Vertical -->
-    <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white navbar-vertical-aside-initialized">
-        <div class="navbar-vertical-container">
-            <div class="navbar-vertical-footer-offset">
-                <!-- Content -->
-                <div class="navbar-vertical-content">
-                    <div id="navbarVerticalMenu" class="nav nav-pills nav-vertical card-navbar-nav">
-                        <!-- Collapse -->
-                        <div class="nav-item">
-                            <a class="nav-link" href="../teacher/index.html">
-                                <i class="bi-house-door-fill nav-icon"></i>
-                                <span class="nav-link-title">Home</span>
-                            </a>
-                        </div>
-                        <!-- End Collapse -->
-
-                        <!-- <span class="dropdown-header mt-4">Pages</span> -->
-                        <small class="bi-three-dots nav-subtitle-replacer"></small>
-
-                        <!-- Collapse -->
-                        <div class="navbar-nav nav-compact">
-
-                        </div>
-                        <div id="navbarVerticalMenuPagesMenu">
-
-                            <div class="nav-item">
-                                <a class="nav-link active" href="../teacher/teacher-students.html" data-placement="left">
-                                    <i class="bi-people-fill nav-icon"></i>
-                                    <span class="nav-link-title">Students</span>
-                                </a>
-                            </div>
-
-                            <div class="nav-item">
-                                <a class="nav-link " href="../teacher/teacher-messages.html" data-placement="left">
-                                    <i class="bi-chat-left-text-fill nav-icon"></i>
-                                    <span class="nav-link-title">Messages</span>
-                                </a>
-                            </div>
-
-                            <div class="nav-item">
-                                <a class="nav-link" href="../teacher/teacher-history.html" data-placement="left">
-                                    <i class="bi-list-ul nav-icon"></i>
-                                    <span class="nav-link-title">History</span>
-                                </a>
-                            </div>
-                            <div class="nav-item">
-                                <a class="nav-link " href="../teacher/teacher-self-regulate.html" data-placement="left">
-                                    <i class="bi-heart-fill nav-icon"></i>
-                                    <span class="nav-link-title">Self-Regulate</span>
-                                </a>
-                            </div>
-                            <div class="nav-item">
-                                <a class="nav-link " href="../teacher/teacher-settings.html" data-placement="left">
-                                    <i class="bi-gear nav-icon"></i>
-                                    <span class="nav-link-title">Settings</span>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End Collapse -->
-                    </div>
-                </div>
-                <!-- End Content -->
-            </div>
-        </div>
-    </aside>
-    <!-- End Navbar Vertical -->
-
     <main id="content" role="main" class="main">
         <!-- Content -->
         <div class="content container-fluid">
+            <div class="navbar-expand-lg navbar-light">
+                <!-- Navbar Vertical -->
+                <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white navbar-vertical-aside-initialized">
+                    <!-- Navbar Vertical Toggle -->
+                    <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler" style="opacity: 1;">
+                        <i class="bi-arrow-bar-left navbar-toggler-short-align"
+                           data-bs-template="<div class=&quot;tooltip d-none d-md-block&quot; role=&quot;tooltip&quot;><div class=&quot;arrow&quot;></div><div class=&quot;tooltip-inner&quot;></div></div>"
+                           data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Collapse" aria-label="Collapse"></i>
+                        <i class="bi-arrow-bar-right navbar-toggler-full-align"
+                           data-bs-template="<div class=&quot;tooltip d-none d-md-block&quot; role=&quot;tooltip&quot;><div class=&quot;arrow&quot;></div><div class=&quot;tooltip-inner&quot;></div></div>"
+                           data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Expand" aria-label="Expand"></i>
+                    </button>
+                    <!-- End Navbar Vertical Toggle -->
+                    <div class="navbar-vertical-container">
+                        <div class="navbar-vertical-footer-offset">
+                            <!-- Content -->
+                            <div class="navbar-vertical-content">
+                                <div id="navbarVerticalMenu" class="nav nav-pills nav-vertical card-navbar-nav">
+                                    <div id="navbarVerticalMenuPagesMenu">
+                                        <!-- Collapse -->
+                                        <div class="nav-item">
+                                            <a class="nav-link" href="../teacher/index.html">
+                                                <i class="bi-house-door-fill nav-icon"></i>
+                                                <span class="nav-link-title">Home</span>
+                                            </a>
+                                        </div>
+                                        <!-- End Collapse -->
+                                        <div class="nav-item">
+                                            <a class="nav-link active" href="../teacher/teacher-students.html" data-placement="left">
+                                                <i class="bi-people-fill nav-icon"></i>
+                                                <span class="nav-link-title">Students</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="nav-item">
+                                            <a class="nav-link " href="../teacher/teacher-messages.html" data-placement="left">
+                                                <i class="bi-chat-left-text-fill nav-icon"></i>
+                                                <span class="nav-link-title">Messages</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="nav-item">
+                                            <a class="nav-link" href="../teacher/teacher-history.html" data-placement="left">
+                                                <i class="bi-list-ul nav-icon"></i>
+                                                <span class="nav-link-title">History</span>
+                                            </a>
+                                        </div>
+                                        <div class="nav-item">
+                                            <a class="nav-link " href="../teacher/teacher-self-regulate.html" data-placement="left">
+                                                <i class="bi-heart-fill nav-icon"></i>
+                                                <span class="nav-link-title">Self-Regulate</span>
+                                            </a>
+                                        </div>
+                                        <div class="nav-item">
+                                            <a class="nav-link " href="../teacher/teacher-settings.html" data-placement="left">
+                                                <i class="bi-gear nav-icon"></i>
+                                                <span class="nav-link-title">Settings</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- End Collapse -->
+                                </div>
+                            </div>
+                            <!-- End Content -->
+                        </div>
+                    </div>
+                </aside>
+                <!-- End Navbar Vertical -->
+            </div>
+
             <!-- Page Header -->
             <div class="page-header">
                 <div class="row align-items-center">
@@ -455,11 +464,11 @@
                                         <div class="col">
                                             <h4 class="card-header-title mb-2">Teacher’s Class</h4>
                                             <div class="d-flex align-items-center">
-                                                <div class="flex-shrink-0">
-                                                    <img class="avatar avatar-sm avatar-4x3" src="../assets/images/avatar-05.png" alt="Image Description">
+                                                <div class="avatar avatar-circle">
+                                                    <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
                                                 </div>
                                                 <div class="flex-grow-1 ms-4">
-                                                    <h3 class="text-inherit mb-1">Kristin Watson</h3>
+                                                    <h4 class="text-inherit mb-1">Kristin Watson</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -552,8 +561,47 @@
                 <div class="col-sm-3">
                     <div class="card h-100">
                         <div class="card-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo maxime aut repellendus unde quos nesciunt ex explicabo nihil id, at, a quidem sit illum itaque amet pariatur natus
-                                minus.</p>
+                            <h4 class="card-header-title mb-4">Student’s Collective</h4>
+                            <h4 class="card-header-title mb-4">VIPs</h4>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="avatar avatar-circle">
+                                    <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                </div>
+                                <div class="flex-grow-1 ms-4">
+                                    <h4 class="text-inherit mb-1 fw-normal-plus">
+                                        Kristin Watson
+                                        <i class="bi-star-fill bi-gradient-orange" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Top endorsed" aria-label="Top endorsed"></i>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar avatar-circle">
+                                    <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                </div>
+                                <div class="flex-grow-1 ms-4">
+                                    <h4 class="text-inherit mb-1 fw-normal-plus">Kristin Watson</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4 class="card-header-title mb-4">Counselor/Social Worker</h4>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar avatar-circle">
+                                    <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                </div>
+                                <div class="flex-grow-1 ms-4">
+                                    <h4 class="text-inherit mb-1 fw-normal-plus">Kristin Watson</h4>
+                                </div>
+                            </div>
+                            <hr>
+                            <h4 class="card-header-title mb-4">Other</h4>
+                            <div class="d-flex align-items-center">
+                                <div class="avatar avatar-circle">
+                                    <img class="avatar-img" src="../assets/images/avatar-05.png" alt="Image Description">
+                                </div>
+                                <div class="flex-grow-1 ms-4">
+                                    <h4 class="text-inherit mb-1 fw-normal-plus">Kristin Watson</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -973,6 +1021,7 @@
 
     <!-- <script src="/assets/js/vendor.min.js"></script> -->
     <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/js/hs-navbar-vertical-aside.min.js"></script>
     <script src="../assets/js/theme.min.js"></script>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/audioplayer.js"></script>

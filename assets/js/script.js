@@ -1,8 +1,12 @@
 (function() {
     window.onload = function () {
-      // INITIALIZATION OF SELECT
-      // =======================================================
-      HSCore.components.HSTomSelect.init('.js-select')
+        // INITIALIZATION OF NAVBAR VERTICAL ASIDE
+        // =======================================================
+        var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+
+        // INITIALIZATION OF SELECT
+        // =======================================================
+        HSCore.components.HSTomSelect.init('.js-select')
     }
 
     const validateButton = (element, button) =>{
