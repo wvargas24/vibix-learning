@@ -2,7 +2,7 @@
     window.onload = function () {
         // INITIALIZATION OF NAVBAR VERTICAL ASIDE
         // =======================================================
-        new HSSideNav('.js-navbar-vertical-aside').init()
+        var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
 
         // INITIALIZATION OF SELECT
         // =======================================================
