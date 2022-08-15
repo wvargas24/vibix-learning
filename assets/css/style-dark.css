@@ -1,0 +1,202 @@
+.dropdown-toggle::after {
+    border-top: none;
+    border-left: none;
+}
+
+.card-green-1 {
+    background: radial-gradient(56.1% 56.1% at 104.65% -6.1%, #9CE0C2 0%, #2A2D3E 100%);
+}
+
+.card-green-2 {
+    background: radial-gradient(56.1% 56.1% at 104.65% -6.1%, #9CE0C2 0%, #2A2D3E 100%);
+}
+
+.card-green-3 {
+    background: radial-gradient(61.92% 61.92% at 104.65% -6.1%, #4ECEC2 0%, #2A2D3E 100%);
+}
+
+.card-green-4 {
+    background: radial-gradient(70.93% 70.93% at 100% 0%, #2E636E 0%, #2A2D3E 100%);
+}
+
+.card-green-1 h6,
+.card-green-2 h6,
+.card-green-3 h6,
+.card-green-4 h6 {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--bs-white);
+}
+
+.badge {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--bs-white);
+}
+
+.mic-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.recording-box {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px -2px rgb(0 0 0 / 25%);
+    border-radius: 25.5px;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 48px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.toolbar {
+    text-align: center;
+    display: flex;
+}
+
+.button--record,
+.button--play {
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: var(--bs-acqua-dark);
+    cursor: pointer;
+    border: 1.7px solid #2E636E;
+}
+
+.button--stop {
+    transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    background: var(--bs-white);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: var(--bs-orange);
+    cursor: pointer;
+    border: 1.7px solid var(--bs-orange);
+}
+
+.audio {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: 0;
+}
+
+.waveform {
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+}
+
+.waveform__canvas {
+    width: 160px;
+    height: 32px;
+}
+
+.js-time {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bs-body-color);
+}
+
+.message {
+    transtion: opacity 0.4s ease-in-out;
+    padding: 0 10px;
+    opacity: 0;
+    font-size: 16px;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    color: var(--bs-orange);
+    line-height: 19px;
+}
+
+.chat-contact-title,
+.chat-contact-content,
+.unread-message,
+.unread-message .chat-contact-title,
+.unread-message .chat-contact-content {
+    color: var(--bs-white);
+}
+
+/*==================== CHAT =========================*/
+.chat-content-header {
+    padding: 1rem;
+    border-bottom: 1px solid var(--bs-gray-dark);
+}
+
+.conversation-info {
+    border-left: 1px solid var(--bs-gray-dark);
+}
+
+.chat-contact.active:not(:first-child),
+.chat-contact.active+.chat-contact {
+    border-top: 1px solid var(--bs-gray-dark);
+}
+
+.contacts-list {
+    border-right: 1px solid var(--bs-gray-dark);
+}
+
+.chat-editor-area {
+    border-top: 1px solid var(--bs-gray-dark);
+}
+
+.contacts-search-wrapper {
+    position: relative;
+    border-top: 1px solid var(--bs-gray-dark);
+    border-right: 1px solid var(--bs-gray-dark);
+}
+
+.chat-editor-area .emojiarea-editor[contenteditable="true"]:empty::before {
+    content: attr(placeholder);
+    pointer-events: none;
+    color: var(--bs-body-color);
+}
+
+/*==================================================*/
+.tom-select-custom .ts-control {
+    padding: 0.6125rem 3rem 0.6125rem 1rem;
+    min-height: calc(1.5em + 0.75rem + 2px);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.ts-dropdown-content {
+    background: #212332;
+    box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 6%);
+    border-radius: 10px;
+}
+
+.foot-table .tom-select-custom .ts-dropdown .option {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
