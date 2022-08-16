@@ -200,3 +200,18 @@
 .foot-table .tom-select-custom .ts-dropdown .option {
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
+
+.message--visible {
+    opacity: 1;
+}
+
+.btn-remove-record {
+    color: var(--bs-acqua-dark);
+    border: none;
+    padding-right: 7px;
+}
+
+.btn-remove-record:hover {
+    border: none;
+    color: var(--bs-gray-600);
+}
