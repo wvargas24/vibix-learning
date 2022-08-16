@@ -521,6 +521,10 @@ progress {
     line-height: 1.2
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 @media (min-width:1200px) {
     .display-1 {
         font-size: 5rem
