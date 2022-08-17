@@ -110,10 +110,6 @@
     color: var(--bs-secondary);
 }
 
-.list-group-item {
-    border: 1px solid #DCF5F3;
-}
-
 .page-header {
     padding-bottom: 0;
     margin-bottom: 33px;
@@ -143,7 +139,7 @@
     color: var(--bs-body-color);
     text-align: center;
     padding: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
 }
 
 .card-green-1 {
@@ -178,7 +174,7 @@
 }
 
 .card-hover-shadow:hover {
-    box-shadow: 0px 0px 20px rgb(156 224 194 / 80%) !important;
+    box-shadow: 0px 0px 20px rgb(226 138 58 / 80%) !important;
 }
 
 .card-header-title {
@@ -748,6 +744,15 @@ label {
     font-size: 20px;
     line-height: 23px;
     color: var(--bs-body-color);
+}
+
+.divider-center {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    color: #858585;
+    padding: 1em;
 }
 
 @media (min-width: 576px) {

@@ -5575,7 +5575,7 @@ fieldset:disabled .btn {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: .0625rem solid rgba(231, 234, 243, .7);
+    border: 1px solid rgb(206 210 219);
     border-radius: .75rem
 }
 
@@ -6269,7 +6269,7 @@ fieldset:disabled .btn {
     padding: 1rem 1rem;
     color: #1e2022;
     background-color: #fff;
-    border: .0625rem solid #e7eaf3
+    border: 1px solid rgb(206 210 219);
 }
 
 .list-group-item:first-child {

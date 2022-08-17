@@ -423,7 +423,7 @@
             <div class="row">
                 <div class="col-sm-6 col-lg-6 mb-3 mb-lg-3">
                     <!-- Card -->
-                    <div class="card-bg-gray">
+                    <div class="card card-bg-gray mb-4">
                         <h3>Support a student</h3>
                     </div>
                     <div class="row">
@@ -432,7 +432,7 @@
                             <a class="card card-hover-shadow h-100 card-green-1" href="#" data-bs-toggle="modal" data-bs-target="#supportStudentModal">
                                 <div class="card-body d-flex align-items-center btn-group-vertical justify-content-between">
                                     <img src="../assets/svg/logos/support-student.svg" alt="" class="mb-3">
-                                    <h6>Support a student</h6>
+                                    <h6>Support a Student</h6>
                                 </div>
                             </a>
                             <!-- End Card -->
@@ -451,7 +451,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-6 mb-3 mb-lg-3">
                     <!-- Card -->
-                    <div class="card-bg-gray">
+                    <div class="card card-bg-gray mb-4">
                         <h3>Help myself</h3>
                     </div>
                     <div class="row">
@@ -711,13 +711,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 pe-0">
                                 <div class="mb-4">
                                     <label for="">Date</label>
                                     <input id="support-student-date" type="date" class="form-control form-control-light">
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 pe-0">
                                 <div class="mb-4">
                                     <label for="">Time</label>
                                     <input id="support-student-time" type="time" class="form-control form-control-light">
@@ -734,9 +734,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="mb-4">
-                                    <p class="text-divider"><span>OR</span></p>
-                                </div>
+                                <span class="divider-center mb-4">OR</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -854,13 +852,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 pe-0">
                                 <div class="mb-4">
                                     <label for="">Date</label>
                                     <input id="support-student-date" type="date" class="form-control form-control-light">
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-4 pe-0">
                                 <div class="mb-4">
                                     <label for="">Time</label>
                                     <input id="support-student-time" type="time" class="form-control form-control-light">
@@ -877,9 +875,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="mb-4">
-                                    <p class="text-divider"><span>OR</span></p>
-                                </div>
+                                <span class="divider-center mb-4">OR</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -933,6 +929,50 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <p>This action will tag you out from your activities. </p>
+                    <div id="boxTagBackIn" style="display: none;">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="mb-0">
+                                    <textarea id="support-student-observations" name="" class="form-control form-control-light" id="" placeholder="Please relect on your mental, emotional, and physical state..." cols="30"
+                                              rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <span class="divider-center mb-4">OR</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="mic-container mx-auto w-100">
+                                <div class="recording-box">
+                                    <div class="toolbar">
+                                        <button class="js-record btn button--record">
+                                            <i class="bi bi-mic-fill" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="js-stop btn button--stop" style="display: none;">
+                                            <i class="bi bi-stop-fill"></i>
+                                        </button>
+                                        <button class="js-play btn button--play button--disabled" style="display: none;">
+                                            <i class="bi bi-play-fill" aria-hidden="true"></i>
+                                        </button>
+                                        <audio class="js-audio audio audio--hidden" controls />
+                                    </div>
+                                    <div class="waveform">
+                                        <canvas class="js-canvas waveform__canvas"></canvas>
+                                    </div>
+                                    <div class="js-time"></div>
+                                </div>
+                                <div class="js-message message"></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="mx-auto">
+                                <p class="text-descript">Leave an observation via voice note</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancel</button>
