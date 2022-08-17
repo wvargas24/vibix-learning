@@ -750,6 +750,15 @@ label {
     color: var(--bs-body-color);
 }
 
+.divider-center {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    color: #858585;
+    padding: 1em;
+}
+
 @media (min-width: 576px) {
     .contacts-list {
         height: calc(100% - 2.063rem);

@@ -27,6 +27,7 @@
             $('#tagOutModal').modal('toggle');
             $('#btnTagOut').css('display','none');
             $('#btnTagBackIn').css('display','block');
+            $('#boxTagBackIn').css('display','block');
         });
         
         $("#btnTagBackIn").on( "click", function(e) {
@@ -38,6 +39,7 @@
             $('#tagOutModal').modal('toggle');
             $('#btnTagOut').css('display','block');
             $('#btnTagBackIn').css('display','none');
+            $('#boxTagBackIn').css('display','none');
         });
 
         $("#edit-profile-button").on( "click", function() {
