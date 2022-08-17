@@ -110,10 +110,6 @@
     color: var(--bs-secondary);
 }
 
-.list-group-item {
-    border: 1px solid #DCF5F3;
-}
-
 .page-header {
     padding-bottom: 0;
     margin-bottom: 33px;
@@ -143,7 +139,7 @@
     color: var(--bs-body-color);
     text-align: center;
     padding: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 0px;
 }
 
 .card-green-1 {
