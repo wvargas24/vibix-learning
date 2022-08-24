@@ -23199,9 +23199,7 @@ label.form-control {
 }
 
 .icon-success {
-    color: #fff;
-    border-color: #4ECEC2;
-    background-color: #4ECEC2
+    color: #4ECEC2;
 }
 
 .icon-info {
@@ -24044,7 +24042,8 @@ label.form-control {
 }
 
 .nav-vertical.nav-pills .nav-link.active {
-    background-color: rgba(255, 255, 255, .075)
+    background: linear-gradient(330.5deg, #4ECEC2 -3.26%, #9CE0C2 102.87%);
+    color: var(--bs-acqua-dark);
 }
 
 .nav-vertical.nav-pills .nav-link.active[aria-expanded=false],
