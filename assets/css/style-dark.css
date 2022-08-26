@@ -1,3 +1,12 @@
+.page-internal-header-title a {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--bs-white);
+}
+
 .dropdown-toggle::after {
     border-top: none;
     border-left: none;
@@ -19,6 +28,25 @@
     background: radial-gradient(70.93% 70.93% at 100% 0%, #2E636E 0%, #2A2D3E 100%);
 }
 
+.card-green-1:hover,
+.card-green-2:hover {
+    background: radial-gradient(72.92% 59.92% at -9.35% 99.9%, #9CE0C2 0%, #2A2D3E 100%);
+    box-shadow: 20px 20px 15px -9px rgba(0, 0, 0, 0.1);
+}
+
+.card-green-3:hover,
+.card-green-4:hover {
+    background: radial-gradient(72.92% 59.92% at -9.35% 99.9%, #4ECEC2 0%, #2A2D3E 100%);
+    box-shadow: 20px 20px 15px -9px rgba(0, 0, 0, 0.1);
+}
+
+.card-green-1 img,
+.card-green-2 img,
+.card-green-3 img,
+.card-green-4 img {
+    margin: 0;
+}
+
 .card-green-1 h6,
 .card-green-2 h6,
 .card-green-3 h6,
@@ -29,6 +57,7 @@
     font-size: 18px;
     line-height: 21px;
     color: var(--bs-white);
+    margin: 0;
 }
 
 .badge {

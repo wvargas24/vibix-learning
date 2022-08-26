@@ -3027,8 +3027,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: #377dff;
-    border-color: #377dff
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange)
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -4404,7 +4404,7 @@ fieldset:disabled .btn {
     color: rgba(255, 255, 255, .7);
     text-align: left;
     list-style: none;
-    background-color: #2a2d30;
+    background-color: #212332;
     background-clip: padding-box;
     border: 0 solid rgba(0, 0, 0, .15);
     border-radius: .5rem
@@ -5887,7 +5887,15 @@ fieldset:disabled .btn {
 .page-link {
     position: relative;
     display: block;
-    color: #c5c8cc;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* V Acqua */
+
+    color: #4ECEC2;
     background-color: transparent;
     border: 0 solid #4b5055;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
@@ -5926,7 +5934,12 @@ fieldset:disabled .btn {
 }
 
 .page-item.disabled .page-link {
-    color: rgba(143, 149, 156, .5);
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(78, 206, 194, 0.5);
     pointer-events: none;
     background-color: transparent;
     border-color: #4b5055
@@ -7074,7 +7087,7 @@ fieldset:disabled .btn {
 .bs-tooltip-top .tooltip-arrow::before {
     top: -1px;
     border-width: .4rem .4rem 0;
-    border-top-color: #121314
+    border-top-color: var(--bs-acqua-dark)
 }
 
 .bs-tooltip-auto[data-popper-placement^=right],
@@ -7093,7 +7106,7 @@ fieldset:disabled .btn {
 .bs-tooltip-end .tooltip-arrow::before {
     right: -1px;
     border-width: .4rem .4rem .4rem 0;
-    border-right-color: #121314
+    border-right-color: var(--bs-acqua-dark)
 }
 
 .bs-tooltip-auto[data-popper-placement^=bottom],
@@ -7110,7 +7123,7 @@ fieldset:disabled .btn {
 .bs-tooltip-bottom .tooltip-arrow::before {
     bottom: -1px;
     border-width: 0 .4rem .4rem;
-    border-bottom-color: #121314
+    border-bottom-color: var(--bs-acqua-dark)
 }
 
 .bs-tooltip-auto[data-popper-placement^=left],
@@ -7129,16 +7142,21 @@ fieldset:disabled .btn {
 .bs-tooltip-start .tooltip-arrow::before {
     left: -1px;
     border-width: .4rem 0 .4rem .4rem;
-    border-left-color: #121314
+    border-left-color: var(--bs-acqua-dark)
 }
 
 .tooltip-inner {
     max-width: 200px;
-    padding: .25rem .5rem;
-    color: #fff;
+    padding: 4px 8px;
     text-align: center;
-    background-color: #121314;
-    border-radius: .5rem
+    background-color: var(--bs-acqua-dark);
+    border-radius: .5rem;
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 12px;
+    line-height: 18px;
+    color: #EFEFEF;
 }
 
 .popover {
@@ -22326,7 +22344,7 @@ label.form-control {
 }
 
 .form-check-input:checked {
-    background-color: #377dff
+    background-color: var(--bs-orange)
 }
 
 .form-switch-between {
@@ -29622,8 +29640,8 @@ label.form-control {
 }
 
 .page-header {
-    border-bottom: .0625rem solid #2f3235;
-    padding-bottom: 2rem;
+    /* border-bottom: .0625rem solid #2f3235; */
+    padding-bottom: 1rem;
     margin-bottom: 2.25rem
 }
 
@@ -33782,7 +33800,7 @@ textarea:-webkit-autofill:hover {
 }
 
 .bg-warning {
-    background-color: #232527 !important
+    background-color: var(--bs-orange) !important
 }
 
 .bg-soft-dark {
@@ -33811,7 +33829,7 @@ textarea:-webkit-autofill:hover {
 }
 
 .btn-ghost-secondary {
-    color: #91989e
+    color: #ffffff;
 }
 
 .btn-ghost-light {
