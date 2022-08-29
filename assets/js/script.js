@@ -6,7 +6,14 @@
 
         // INITIALIZATION OF SELECT
         // =======================================================
-        HSCore.components.HSTomSelect.init('.js-select')
+        HSCore.components.HSTomSelect.init('.js-select');
+
+        // INITIALIZATION OF TOGGLE SWITCH
+        // =======================================================
+        if ($('.js-toggle-switch').length > 0) {
+            new HSToggleSwitch('.js-toggle-switch');
+        }
+        
     }
 
     const validateButton = (element, button) =>{

@@ -666,9 +666,10 @@
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="supportStudentModalLabel"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <span> Support
-                            student</span></h5>
-
+                    <h5 class="modal-title" id="supportStudentModalLabel">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <span> Get Support</span>
+                    </h5>
                 </div>
 
                 <!-- Body -->
@@ -681,46 +682,32 @@
                                 <div class="mb-4">
                                     <!-- Select -->
                                     <div class="tom-select-custom">
-                                        <select class="js-select form-select tomselected" id="searchStudent" autocomplete="off" placeholder="Search student" data-hs-tom-select-options='{
+                                        <select class="js-select form-select tomselected" id="searchStudent" autocomplete="off" placeholder="Search" data-hs-tom-select-options='{
                                                 "searchInDropdown": false,
                                                 "hidePlaceholderOnSearch": true,
-                                                "placeholder": "Search student"
+                                                "placeholder": "Search"
                                               }'>
 
                                             <option value="student-00" data-option-template='
                                                 <span class="d-flex align-items-center">
                                                     <i class="bi-person text-body"></i>
-                                                    <span class="flex-grow-1 ms-2">Search student</span>
+                                                    <span class="flex-grow-1 ms-2">Search</span>
                                                 </span>' selected="true">
-                                                Search student
+                                                Search
                                             </option>
                                             <option value="student-01" data-option-template='
                                                 <span class="d-flex align-items-center">
-                                                    <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-01.png" alt="Avatar" />
-                                                    <span class="flex-grow-1 ms-2">Jane Cooper</span>
+                                                    <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-xl.png" alt="Avatar" />
+                                                    <span class="flex-grow-1 ms-2">Mike Jones</span>
                                                 </span>'>
-                                                Jane Cooper
+                                                Mike Jones
                                             </option>
                                             <option value="student-02" data-option-template='
                                                 <span class="d-flex align-items-center">
                                                     <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-02.png" alt="Avatar" />
-                                                    <span class="flex-grow-1 ms-2">Wade Warren</span>
+                                                    <span class="flex-grow-1 ms-2">Devon Lanes</span>
                                                 </span>'>
-                                                Wade Warren
-                                            </option>
-                                            <option value="student-03" data-option-template='
-                                                <span class="d-flex align-items-center">
-                                                    <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-03.png" alt="Avatar" />
-                                                    <span class="flex-grow-1 ms-2">Jane Williams</span>
-                                                </span>'>
-                                                Jane Williams
-                                            </option>
-                                            <option value="student-04" data-option-template='
-                                                <span class="d-flex align-items-center">
-                                                    <img class="avatar avatar-xss avatar-circle" src="../assets/images/avatar-04.png" alt="Avatar" />
-                                                    <span class="flex-grow-1 ms-2">Jane Miller</span>
-                                                </span>'>
-                                                Jane Miller
+                                                Devon Lanes
                                             </option>
 
                                         </select>
@@ -732,16 +719,25 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-4">
-                                <div class="mb-4">
-                                    <label for="">Date</label>
-                                    <input id="support-student-date" type="date" class="form-control form-control-light">
+                            <div class="col-sm-12">
+                                <!-- Form Switch -->
+                                <div class="d-flex justify-content-start mb-4">
+                                    <div class="form-check form-switch form-switch-between">
+                                        <label class="form-check-label">Meet</label>
+                                        <input class="js-toggle-switch form-check-input" type="checkbox" data-hs-toggle-switch-options='{ 
+                                            "targetSelector": "#pricingCount1, #pricingCount2"
+                                        }'>
+                                        <label class="form-check-label">Chat</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="mb-4">
-                                    <label for="">Time</label>
-                                    <input id="support-student-time" type="time" class="form-control form-control-light">
+                                <!-- End Form Switch -->
+
+                                <div class="row justify-content-start d-none">
+                                    <div class="col-md-3 mb-3 mb-md-0">
+                                        <div id="pricingCount1" class="display-4 text-center" data-hs-toggle-switch-item-options='{}'></div>
+                                        <div id="pricingCount2" class="display-4 text-center" data-hs-toggle-switch-item-options='{}'></div>
+                                    </div>
+                                    <!-- End Col -->
                                 </div>
                             </div>
                         </div>
@@ -755,9 +751,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="mb-4">
-                                    <p class="text-divider"><span>OR</span></p>
-                                </div>
+                                <span class="divider-center mt-3 mb-3">OR</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -899,7 +893,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="mb-4">
-                                    <p class="text-divider"><span>OR</span></p>
+                                    <span class="divider-center mt-3 mb-3">OR</span>
                                 </div>
                             </div>
                         </div>
@@ -949,7 +943,6 @@
     </div>
 
     <!-- Tag Out Modal -->
-    <!-- Tag Out Modal -->
     <div class="modal fade" id="tagOutModal" tabindex="-1" aria-labelledby="tagOutModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
@@ -966,7 +959,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <span class="divider-center mb-4">OR</span>
+                                <span class="divider-center mt-3 mb-3">OR</span>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -1057,12 +1050,11 @@
         </div>
     </div>
 
-
+    <script src="/assets/js/vendor.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/tom-select@2.1.0/dist/js/tom-select.complete.min.js"></script>
 
-    <!-- <script src="/assets/js/vendor.min.js"></script> -->
     <script src="../assets/js/hs-navbar-vertical-aside.min.js"></script>
     <script src="../assets/js/theme.min.js"></script>
     <script src="../assets/js/script.js"></script>
