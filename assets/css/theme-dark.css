@@ -5603,7 +5603,7 @@ fieldset:disabled .btn {
     padding: 1.3125rem 1.3125rem;
     margin-bottom: 0;
     background-color: transparent;
-    border-bottom: .0625rem solid #2f3235
+    border-bottom: .0625rem solid #2E636E
 }
 
 .card-header:first-child {
@@ -5613,7 +5613,7 @@ fieldset:disabled .btn {
 .card-footer {
     padding: 1.3125rem 1.3125rem;
     background-color: transparent;
-    border-top: .0625rem solid #2f3235
+    border-top: .0625rem solid #2E636E;
 }
 
 .card-footer:last-child {
@@ -5928,9 +5928,17 @@ fieldset:disabled .btn {
 
 .page-item.active .page-link {
     z-index: 3;
-    color: #fff;
-    background-color: #377dff;
-    border-color: #377dff
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+
+    /* V Acqua */
+
+    color: #4ECEC2;
+    background-color: transparent;
+    border: none;
 }
 
 .page-item.disabled .page-link {
@@ -33784,7 +33792,7 @@ textarea:-webkit-autofill:hover {
 }
 
 .text-secondary {
-    color: #6d747b !important
+    color: #ffffff !important
 }
 
 .bg-white {

@@ -173,6 +173,24 @@
     color: var(--bs-acqua-dark);
 }
 
+.cardTagout-orange {
+    background: linear-gradient(333.43deg, #F26903 -1.45%, rgba(255, 109, 0, 0) 177.81%);
+    color: var(--bs-white);
+}
+
+.cardTagout-orange h6 {
+    color: var(--bs-white);
+}
+
+.cardTagout-green {
+    background: linear-gradient(151.07deg, rgba(156, 224, 194, 0) -75.93%, #9CE0C2 95.65%);
+    color: var(--bs-acqua-dark);
+}
+
+.cardTagout-green h6 {
+    color: var(--bs-acqua-dark);
+}
+
 .card-hover-shadow:hover {
     box-shadow: 0px 0px 20px rgb(226 138 58 / 80%) !important;
 }

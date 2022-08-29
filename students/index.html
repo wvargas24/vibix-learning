@@ -949,11 +949,56 @@
     </div>
 
     <!-- Tag Out Modal -->
+    <!-- Tag Out Modal -->
     <div class="modal fade" id="tagOutModal" tabindex="-1" aria-labelledby="tagOutModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
                 <div class="modal-body">
                     <p>This action will tag you out from your activities. </p>
+                    <div id="boxTagBackIn" style="display: none;">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="mb-0">
+                                    <textarea id="support-student-observations" name="" class="form-control form-control-light" id="" placeholder="Please relect on your mental, emotional, and physical state..." cols="30"
+                                              rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <span class="divider-center mb-4">OR</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="mic-container mx-auto w-100">
+                                <div class="recording-box">
+                                    <div class="toolbar">
+                                        <button class="js-record btn button--record">
+                                            <i class="bi bi-mic-fill" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="js-stop btn button--stop" style="display: none;">
+                                            <i class="bi bi-stop-fill"></i>
+                                        </button>
+                                        <button class="js-play btn button--play button--disabled" style="display: none;">
+                                            <i class="bi bi-play-fill" aria-hidden="true"></i>
+                                        </button>
+                                        <audio class="js-audio audio audio--hidden" controls />
+                                    </div>
+                                    <div class="waveform">
+                                        <canvas class="js-canvas waveform__canvas"></canvas>
+                                    </div>
+                                    <div class="js-time"></div>
+                                </div>
+                                <div class="js-message message"></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="mx-auto">
+                                <p class="text-descript">Leave an observation via voice note</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancel</button>

@@ -176,6 +176,19 @@
     color: var(--bs-white);
 }
 
+.cardTagout-orange {
+    background: radial-gradient(50% 50% at 100% 0%, #2E636E 0%, #F26903 0.01%, #2A2D3E 100%);
+}
+
+.cardTagout-orange:hover {
+    background: radial-gradient(72.92% 59.92% at -9.35% 99.9%, #F26903 0%, #2A2D3E 100%);
+    box-shadow: 20px 20px 15px -9px rgb(0 0 0 / 10%);
+}
+
+.cardTagout-green {
+    background: radial-gradient(70.93% 70.93% at 100% 0%, #2E636E 0%, #2A2D3E 100%);
+}
+
 /*==================== CHAT =========================*/
 .chat-content-header {
     padding: 1rem;

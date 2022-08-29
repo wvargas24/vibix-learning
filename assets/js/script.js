@@ -20,10 +20,10 @@
     $(document).ready(() => {
         $("#btnTagOut").on( "click", function(e) {
             e.preventDefault();
-            $('#car-tag-out').css('background','linear-gradient(333.43deg, #F26903 -1.45%, rgba(255, 109, 0, 0) 177.81%)');
+            $('#car-tag-out').addClass('cardTagout-orange');
+            $('#car-tag-out').removeClass('cardTagout-green');
             $('#car-tag-out img').attr('src','../assets/svg/logos/tag-out-02.svg');
             $('#car-tag-out h6').text('Tag Back In');
-            $('#car-tag-out h6').css('color','#ffffff');
             $('#tagOutModal').modal('toggle');
             $('#btnTagOut').css('display','none');
             $('#btnTagBackIn').css('display','block');
@@ -32,10 +32,10 @@
         
         $("#btnTagBackIn").on( "click", function(e) {
             e.preventDefault();
-            $('#car-tag-out').css('background','linear-gradient(151.07deg, rgba(156, 224, 194, 0) -75.93%, #9CE0C2 95.65%)');
+            $('#car-tag-out').addClass('cardTagout-green');
+            $('#car-tag-out').removeClass('cardTagout-orange');
             $('#car-tag-out img').attr('src','../assets/svg/logos/tag-out.svg');
             $('#car-tag-out h6').text('Tag Out');
-            $('#car-tag-out h6').css('color','var(--bs-acqua-dark)');
             $('#tagOutModal').modal('toggle');
             $('#btnTagOut').css('display','block');
             $('#btnTagBackIn').css('display','none');
