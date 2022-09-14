@@ -79,7 +79,7 @@
 }
 
 .recording-box {
-    background: #FFFFFF;
+    background: #212332;
     box-shadow: 0px 0px 12px -2px rgb(0 0 0 / 25%);
     border-radius: 25.5px;
     display: flex;
@@ -89,6 +89,24 @@
     max-width: 48px;
     padding: 8px;
     overflow: hidden;
+}
+
+.recorder {
+    max-width: inherit;
+    padding: 8px 20px 8px 8px;
+    width: 280px;
+}
+
+
+.waveform {
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+}
+
+.waveform__canvas {
+    width: 160px;
+    height: 32px;
 }
 
 .toolbar {
@@ -108,9 +126,9 @@
     border-radius: 50%;
     border: none;
     outline: none;
-    color: var(--bs-acqua-dark);
+    color: #4ECEC2;
     cursor: pointer;
-    border: 1.7px solid #2E636E;
+    border: 1.7px solid #4ECEC2;
 }
 
 .button--stop {
@@ -121,7 +139,7 @@
     height: 32px;
     margin: 0;
     padding: 0;
-    background: var(--bs-white);
+    background: #212332;
     border-radius: 50%;
     border: none;
     outline: none;
@@ -187,6 +205,83 @@
 
 .cardTagout-green {
     background: radial-gradient(70.93% 70.93% at 100% 0%, #2E636E 0%, #2A2D3E 100%);
+}
+
+.modal .btn-close {
+    background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23ffffff" class="bi bi-arrow-left" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/> </svg>') center/1em auto no-repeat;
+    padding: 0;
+    margin-right: 16px;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--bs-body-color);
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ts-control,
+.ts-control input,
+.ts-dropdown {
+    color: var(--bs-white);
+}
+
+.js-toggle-switch.form-check-input:checked {
+    background-color: #4ECEC2;
+}
+
+.current-goal {
+    background: linear-gradient(142.29deg, #9CE0C2 -2.53%, #4ECEC2 144.64%);
+    border-radius: 10px;
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: var(--fw-regular-plus);
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--bs-acqua-dark);
+    padding: 5px;
+}
+
+label {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-bold);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--bs-white);
+    margin-bottom: 8px;
+}
+
+.gender {
+    font-family: var(--bs-secondary-font-family);
+    font-style: italic;
+    font-weight: var(--fw-regular-plus);
+    font-size: 17px;
+    line-height: 26px;
+    color: #9CE0C2;
+}
+
+.position {
+    font-family: var(--bs-secondary-font-family);
+    font-style: italic;
+    font-weight: var(--fw-regular-plus);
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--bs-white);
+}
+
+a.edit .bi {
+    color: var(--bs-white);
+    font-size: 15px;
 }
 
 /*==================== CHAT =========================*/
@@ -256,4 +351,17 @@
 .btn-remove-record:hover {
     border: none;
     color: var(--bs-gray-600);
+}
+
+.form-check .form-check-label {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--bs-white);
+}
+
+.card .nav-pills .nav-link {
+    border-radius: 0;
 }

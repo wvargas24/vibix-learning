@@ -39,9 +39,9 @@
     --bs-acqua-dark: #2e636e;
     --bs-primary-rgb: 46, 99, 110;
     --bs-secondary-rgb: 108.89062, 116.15, 123.40937;
-    --bs-success-rgb: 0, 201, 167;
+    --bs-success-rgb: 156, 224, 194;
     --bs-info-rgb: 9, 165, 190;
-    --bs-warning-rgb: 245, 202, 153;
+    --bs-warning-rgb: 242, 105, 3;
     --bs-danger-rgb: 237, 76, 120;
     --bs-light-rgb: 44.34375, 47.3, 50.25625;
     --bs-dark-rgb: 255, 255, 255;
@@ -2921,8 +2921,8 @@ textarea.form-control-lg {
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #c5c8cc;
-    background-color: #212332;
+    color: #fff;
+    background-color: #363A50;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23c5c8cc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 1rem center;
@@ -2995,11 +2995,11 @@ textarea.form-control-lg {
     height: 1rem;
     margin-top: .25rem;
     vertical-align: top;
-    background-color: #202325;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border: 1px solid #2f3235;
+    border: 1px solid #DADADA;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -3027,22 +3027,22 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-    background-color: var(--bs-orange);
-    border-color: var(--bs-orange)
+    background-color: transparent;
+    border-color: #4ECEC2;
 }
 
 .form-check-input:checked[type=checkbox] {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%234ECEC2' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e")
 }
 
 .form-check-input:checked[type=radio] {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%234ECEC2'/%3e%3c/svg%3e")
 }
 
 .form-check-input[type=checkbox]:indeterminate {
     background-color: #fff;
     border-color: #fff;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%234ECEC2' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }
 
 .form-check-input:disabled {
@@ -4861,8 +4861,8 @@ fieldset:disabled .btn {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    color: rgba(255, 255, 255, .7);
-    background-color: rgba(255, 255, 255, .075)
+    color: #ffffff;
+    background: #2E636E;
 }
 
 .nav-fill .nav-item,
@@ -6606,7 +6606,7 @@ fieldset:disabled .btn {
     height: 1em;
     padding: .25em .25em;
     color: #91989e;
-    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2391989e'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
     border: 0;
     border-radius: .5rem;
     opacity: .5
@@ -6768,7 +6768,7 @@ fieldset:disabled .btn {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #212332;
+    background-color: #2A2D3E;
     background-clip: padding-box;
     border: .0625rem solid transparent;
     border-radius: .75rem;
@@ -22352,7 +22352,7 @@ label.form-control {
 }
 
 .form-check-input:checked {
-    background-color: var(--bs-orange)
+    background-color: transparent
 }
 
 .form-switch-between {
@@ -22958,7 +22958,7 @@ label.form-control {
 .input-group-light .form-control[readonly],
 .input-group-light .form-select:disabled,
 .input-group-light .form-select[readonly] {
-    background-color: transparent
+    background-color: var(--bs-acqua-dark);
 }
 
 .form-control-hover-light.focus,
