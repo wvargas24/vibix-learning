@@ -352,3 +352,16 @@ a.edit .bi {
     border: none;
     color: var(--bs-gray-600);
 }
+
+.form-check .form-check-label {
+    font-family: var(--bs-secondary-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--bs-white);
+}
+
+.card .nav-pills .nav-link {
+    border-radius: 0;
+}
