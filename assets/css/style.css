@@ -773,6 +773,27 @@ label {
     padding: 1em;
 }
 
+.card .nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.card .nav-pills .nav-link.active,
+.card .nav-pills .show>.nav-link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+
+    /* V Black */
+
+    color: #14212B;
+
+    background: #DCF5F3;
+}
+
 @media (min-width: 576px) {
     .contacts-list {
         height: calc(100% - 2.063rem);
