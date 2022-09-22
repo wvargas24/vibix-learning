@@ -45,7 +45,7 @@
     --bs-secondary-rgb: 113, 134, 157;
     --bs-success-rgb: 0, 201, 167;
     --bs-info-rgb: 9, 165, 190;
-    --bs-warning-rgb: 245, 202, 153;
+    --bs-warning-rgb: 242, 105, 3;
     --bs-danger-rgb: 237, 76, 120;
     --bs-light-rgb: 204, 204, 204;
     --bs-dark-rgb: 19, 33, 68;
@@ -2690,7 +2690,7 @@ progress {
 .form-text {
     margin-top: 1rem;
     font-size: .875em;
-    color: #8c98a4
+    color: #2E636E
 }
 
 .form-control {
@@ -3028,7 +3028,7 @@ textarea.form-control-lg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border: 1px solid rgba(231, 234, 243, .7);
+    border: 1px solid #DADADA;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -3057,7 +3057,7 @@ textarea.form-control-lg {
 
 .form-check-input:checked {
     background-color: #377dff;
-    border-color: #377dff
+    border-color: #00c9a7
 }
 
 .form-check-input:checked[type=checkbox] {
@@ -3065,7 +3065,7 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked[type=radio] {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='%2300c9a7'/></svg>")
 }
 
 .form-check-input[type=checkbox]:indeterminate {
@@ -22416,7 +22416,7 @@ label.form-control {
 }
 
 .form-check-input:checked {
-    background-color: var(--bs-orange);
+    background-color: var(--bs-white);
 }
 
 .form-switch-between {
