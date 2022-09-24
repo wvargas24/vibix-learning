@@ -28,6 +28,12 @@
     top: 80px;
 }
 
+.btn-new-reflection {
+    color: #fff;
+    background-color: #228E84;
+    border-color: #228E84;
+}
+
 .navbar-dropdown-account-wrapper h5 {
     font-family: var(--bs-body-font-family);
     font-style: normal;
@@ -331,6 +337,22 @@
     background: linear-gradient(329.09deg, #2E636E -2.45%, #4ECEC2 106.48%);
 }
 
+.badge-refer {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: var(--fw-semibold);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--bs-white);
+    background: linear-gradient(329.09deg, #2E636E -2.45%, #4ECEC2 106.48%);
+    border-radius: 10px;
+    padding: 2px 9px;
+}
+
+.badge-refer:hover {
+    background: linear-gradient(319.83deg, #4ECEC2 -0.79%, #9CE0C2 120.19%);
+}
+
 .tom-select-custom .ts-control {
     padding: 0.6125rem 3rem 0.6125rem 1rem;
     min-height: calc(1.5em + 0.75rem + 2px);
@@ -619,6 +641,7 @@
     font-style: normal;
     color: var(--bs-orange);
     line-height: 19px;
+    font-weight: var(--fw-semibold);
 }
 
 .message--visible {
@@ -792,6 +815,10 @@ label {
     color: #14212B;
 
     background: #DCF5F3;
+}
+
+#datatableSearch {
+    min-width: 400px;
 }
 
 @media (min-width: 576px) {
