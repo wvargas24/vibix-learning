@@ -20848,7 +20848,7 @@ input[type=number] {
 .btn-xl-status {
     top: -.6125rem;
     right: -.6125rem;
-    font-size: .995rem;
+    font-size: 1.2rem;
     width: 30px;
     height: 30px
 }
@@ -24121,7 +24121,7 @@ label.form-control {
 
 .nav-vertical.nav-pills .nav-item .nav-link:hover,
 .nav-vertical.nav-pills .nav-item .nav-link[aria-expanded]:hover {
-    color: #132144
+    color: #228E84;
 }
 
 .nav-vertical.nav-pills .nav-item.show .nav-link[aria-expanded]:hover {

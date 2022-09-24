@@ -3,6 +3,7 @@
 -----------------------------------------------*/
 .card-chat {
     height: calc(100vh - 4.3125rem - 0.625rem);
+    box-shadow: 0px 0px 30px -4px rgb(0 0 0 / 6%) !important;
 }
 
 .card-chat .card-body {
