@@ -540,13 +540,15 @@
                                                 <img class="avatar avatar-sm" src="../assets/images/avatar-xl.png" alt="Image Description">
                                             </div>
                                             <div class="flex-grow-1 ms-3">
-                                                <h4 class="text-inherit mb-1">
-                                                    Mike Jones
-                                                    <i class="bi bi-star-fill bi-gradient-orange" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Top endorsed"
-                                                       aria-label="Top endorsed"></i>
-                                                    <i class="bi bi-x-lg icon-success cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove VIP" data-bs-original-title="Top endorsed"
-                                                       aria-label="Top endorsed"></i>
-                                                </h4>
+                                                <a id="car-tag-out" href="#" data-bs-toggle="modal" data-bs-target="#perfilVIPModal">
+                                                    <h4 class="text-inherit mb-1">
+                                                        Mike Jones
+                                                        <i class="bi bi-star-fill bi-gradient-orange" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Top endorsed"
+                                                           aria-label="Top endorsed"></i>
+                                                        <i class="bi bi-x-lg icon-success cursor-pointer" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove VIP" data-bs-original-title="Top endorsed"
+                                                           aria-label="Top endorsed"></i>
+                                                    </h4>
+                                                </a>
                                             </div>
                                         </div>
 
@@ -963,7 +965,7 @@
 
     <!-- Tag Out Modal -->
     <div class="modal fade" id="tagOutModal" tabindex="-1" aria-labelledby="tagOutModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
                 <div class="modal-body">
                     <p>This action will tag you out from your activities. </p>
@@ -1017,6 +1019,39 @@
                     <button type="button" class="btn btn-success" id="btnTagOut">Tag Out</button>
                     <button type="button" class="btn btn-success" id="btnTagBackIn" style="display: none;">Tag Back
                         In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Perfil VIP Modal -->
+    <div class="modal fade" id="perfilVIPModal" tabindex="-1" aria-labelledby="perfilVIPModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></h1>
+                </div>
+                <div class="modal-body pt-0 mt-2">
+                    <div class="d-flex align-items-center btn-group-vertical">
+                        <div class="avatar avatar-xxl avatar-circle">
+                            <img class="avatar-img" src="../assets/images/avatar-xl.png" alt="Image Description">
+                        </div>
+                        <div class="flex-grow-1 text-center mt-3">
+                            <h2 class="mb-0 fullname">Mike Jones <i class="bi-chat-left-text-fill nav-icon fs-4 text-success ms-2"></i></h2>
+                            <p class="card-text position text-success mt-1">VIP</p>
+                        </div>
+                        <div class="flex-grow-1 mt-4">
+                            <h3>About me</h3>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                                nostrud amet.</p>
+                            <textarea id="about-me-text" style="display:none;"
+                                      rows="5">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</textarea>
+                            <h3>Interests and hobbies</h3>
+                            <p>Music, arts, literature, nature, sports.</p>
+                            <textarea id="about-me-interests" style="display:none;" rows="5">Music, arts, literature, nature, sports</textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
