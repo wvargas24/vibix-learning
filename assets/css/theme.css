@@ -10280,7 +10280,7 @@ fieldset:disabled .btn {
 }
 
 .bg-soft-primary {
-    background-color: rgba(55, 125, 255, .1) !important
+    background-color: rgba(78, 206, 174, .2) !important
 }
 
 .bg-soft-secondary {
@@ -18058,13 +18058,13 @@ input[type=number] {
 }
 
 ::-moz-selection {
-    color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    /* color: #377dff; */
+    background-color: rgba(78, 206, 174, .2)
 }
 
 ::selection {
-    color: rgb(0 201 167 / 50%);
-    background-color: rgba(55, 125, 255, .1)
+    /* color: rgb(0 201 167 / 50%); */
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .bg-primary ::-moz-selection {
@@ -19149,12 +19149,12 @@ input[type=number] {
 
 .avatar-soft-primary .avatar-initials {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .avatar-status-soft-primary {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .avatar-soft-secondary .avatar-initials {
@@ -19567,7 +19567,7 @@ input[type=number] {
 .btn-ghost-primary:hover,
 .show>.btn-ghost-primary.dropdown-toggle {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .btn-ghost-primary.dropdown-toggle::after {
@@ -19589,7 +19589,7 @@ input[type=number] {
 .btn-ghost-primary.btn-no-focus:focus:hover,
 .btn-ghost-primary.btn-no-focus:hover:hover {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .btn-check:focus+.btn-ghost-primary.btn-no-focus.btn-transition,
@@ -19614,7 +19614,7 @@ input[type=number] {
 .btn-ghost-secondary:hover,
 .show>.btn-ghost-secondary.dropdown-toggle {
     color: var(--bs-gray-dark);
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .btn-ghost-secondary.dropdown-toggle::after {
@@ -19946,7 +19946,7 @@ input[type=number] {
 .btn-ghost-secondary.btn-no-focus:focus:hover,
 .btn-ghost-secondary.btn-no-focus:hover:hover {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .btn-check:focus+.btn-ghost-secondary.btn-no-focus.btn-transition,
@@ -20232,7 +20232,7 @@ input[type=number] {
 
 .btn-soft-primary {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1);
+    background-color: rgba(78, 206, 174, .2);
     border-color: transparent
 }
 
@@ -23504,7 +23504,7 @@ label.form-control {
 }
 
 .list-group-striped>li:nth-of-type(odd) {
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .list-group-sm .list-group-item {
@@ -24291,7 +24291,7 @@ label.form-control {
 .nav-compact .nav-item>.nav-link.active,
 .nav-compact .nav-item>.nav-link:hover {
     color: var(--bs-teal);
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .nav-compact .nav-tabs .nav-collapse .nav-collapse {
@@ -24359,12 +24359,12 @@ label.form-control {
 .nav-compact-icon .nav-icon.active,
 .nav-compact-icon .nav-icon:hover {
     color: var(--bs-teal);
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .nav-compact-icon .nav-link.active .nav-icon {
     color: var(--bs-teal);
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .nav-compact-icon-circle .nav-icon {
@@ -24903,7 +24903,7 @@ label.form-control {
 
 .navbar-dropdown-account-wrapper:focus,
 .navbar-dropdown-account-wrapper:hover {
-    background-color: rgba(55, 125, 255, .1);
+    background-color: rgba(78, 206, 174, .2);
     cursor: pointer;
 }
 
@@ -30790,7 +30790,7 @@ label.form-control {
 
 .step-icon-soft-primary {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .step-icon-soft-primary.step-icon-pseudo::before {
@@ -32215,7 +32215,7 @@ a:hover .text-inherit {
 
 .daterangepicker th.next:hover,
 .daterangepicker th.prev:hover {
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .daterangepicker th.next:hover .daterangepicker-custom-arrow,
@@ -32268,7 +32268,7 @@ a:hover .text-inherit {
 
 .daterangepicker td.available:hover:not(.active) {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .daterangepicker td.in-range {
@@ -32364,7 +32364,7 @@ a:hover .text-inherit {
 
 .daterangepicker .ranges li.active {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .daterangepicker select.ampmselect,
@@ -32477,7 +32477,7 @@ a:hover .text-inherit {
     font-size: .875rem;
     color: #377dff;
     text-align: center;
-    background-color: rgba(55, 125, 255, .1);
+    background-color: rgba(78, 206, 174, .2);
     border-radius: .5rem;
     margin-right: .75rem
 }
@@ -32634,7 +32634,7 @@ a:hover .text-inherit {
 .flatpickr-calendar .flatpickr-next-month:hover,
 .flatpickr-calendar .flatpickr-prev-month:hover {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .flatpickr-calendar .flatpickr-weekday {
@@ -32671,7 +32671,7 @@ a:hover .text-inherit {
 .flatpickr-calendar .flatpickr-day:focus,
 .flatpickr-calendar .flatpickr-day:hover {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .flatpickr-calendar .flatpickr-day.endRange,
@@ -32818,7 +32818,7 @@ a:hover .text-inherit {
     text-overflow: ellipsis;
     white-space: nowrap;
     color: #1e2022;
-    background-color: rgba(55, 125, 255, .1);
+    background-color: rgba(78, 206, 174, .2);
     border-radius: .5rem
 }
 
@@ -32834,7 +32834,7 @@ a:hover .text-inherit {
 }
 
 .fullcalendar-custom .fc-h-event {
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .fullcalendar-custom .fc-listWeek-view .fc-list-event {
@@ -32965,7 +32965,7 @@ a:hover .text-inherit {
 
 .fullcalendar-custom.fc .fc-day-today .fc-col-header-cell-cushion {
     color: #377dff;
-    background-color: rgba(55, 125, 255, .1);
+    background-color: rgba(78, 206, 174, .2);
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem
 }
@@ -33012,7 +33012,7 @@ a:hover .text-inherit {
 
 .fullcalendar-custom.fc .fc-highlight,
 .fullcalendar-custom.fc .fc-timegrid-col.fc-day-today {
-    background-color: rgba(55, 125, 255, .1)
+    background-color: rgba(78, 206, 174, .2)
 }
 
 .fullcalendar-custom.fc .fc-cell-shaded,
