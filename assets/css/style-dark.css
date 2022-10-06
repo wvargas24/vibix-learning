@@ -272,7 +272,7 @@ label {
 
 .position {
     font-family: var(--bs-secondary-font-family);
-    font-style: italic;
+    font-style: normal;
     font-weight: var(--fw-regular-plus);
     font-size: 17px;
     line-height: 26px;
