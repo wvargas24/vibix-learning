@@ -56,7 +56,7 @@
     --bs-gradient2: linear-gradient(330.5deg, #4ECEC2 -3.26%, #9CE0C2 102.87%);
     --bs-gradient3: linear-gradient(329.09deg, #2E636E -2.45%, #4ECEC2 106.48%);
     --bs-gradient-orange: linear-gradient(333.43deg, #F26903 -1.45%, #FFC89F 177.81%);
-    --bs-body-font-family: 'Raleway', sans-serif;
+    --bs-body-font-family: 'Poppins', sans-serif;
     --bs-secondary-font-family: 'Poppins', sans-serif;
     --bs-body-font-size: 14px;
     --bs-body-font-weight: 400;
@@ -93,7 +93,7 @@ body {
 
 hr {
     margin: 1.75rem 0;
-    color: #2f3235;
+    color: #2E636E;
     background-color: currentColor;
     border: 0;
     opacity: 1
@@ -2459,7 +2459,7 @@ progress {
     margin-bottom: 1rem;
     color: #c5c8cc;
     vertical-align: top;
-    border-color: #2f3235
+    border-color: #2E636E
 }
 
 .table>:not(caption)>*>* {
@@ -2478,7 +2478,7 @@ progress {
 }
 
 .table>:not(:first-child) {
-    border-top: .125rem solid #4b5055
+    border-top: .125rem solid #2E636E
 }
 
 .caption-top {
@@ -4795,8 +4795,13 @@ fieldset:disabled .btn {
 .nav-link {
     display: block;
     padding: .5rem 1rem;
-    color: rgba(255, 255, 255, .7);
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out
+    color: rgba(255, 255, 255, 1);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -24040,7 +24045,7 @@ label.form-control {
 }
 
 .nav-vertical.nav-pills .nav-link {
-    padding: .5rem .875rem !important;
+    padding: 1rem .875rem !important;
     margin-bottom: .25rem
 }
 
@@ -24067,7 +24072,8 @@ label.form-control {
     background-color: transparent
 }
 
-.nav-vertical.nav-pills .nav-link.active {
+.nav-vertical.nav-pills .nav-link.active,
+.nav-vertical.nav-pills .nav-link.active:hover {
     background: linear-gradient(330.5deg, #4ECEC2 -3.26%, #9CE0C2 102.87%);
     color: var(--bs-acqua-dark);
 }
@@ -31597,7 +31603,7 @@ a:hover .text-inherit {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    color: #91989e
+    color: #858585
 }
 
 .divider-center::after,
