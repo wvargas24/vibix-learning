@@ -821,6 +821,10 @@ label {
     min-width: 400px;
 }
 
+#navbarNotificationsDropdown .bi {
+    font-size: 18px;
+}
+
 @media (min-width: 576px) {
     .contacts-list {
         height: calc(100% - 2.063rem);
