@@ -351,6 +351,11 @@ a.edit .bi {
     display: none;
 }
 
+.completed-step {
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
 /*==================== CHAT =========================*/
 .chat-content-header {
     padding: 1rem;
