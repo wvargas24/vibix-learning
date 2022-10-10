@@ -177,7 +177,7 @@
 
 .message {
     transtion: opacity 0.4s ease-in-out;
-    padding: 0 10px;
+    padding: 0 0px;
     opacity: 0;
     font-size: 16px;
     font-family: var(--bs-body-font-family);

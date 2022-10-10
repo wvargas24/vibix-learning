@@ -56,11 +56,13 @@
     const setMessage = message => {
         messageContainer.innerHTML = message;
         messageContainer.classList.add('message--visible');
+        messageContainer.classList.add('ps-3');
     }; // Hide the message
     
     
     const hideMessage = () => {
         messageContainer.classList.remove('message--visible');
+        messageContainer.classList.remove('ps-3');
     }; // Request access to the user's microphone.
     
     
@@ -322,6 +324,7 @@
             $('#removeVoiceNoteModal').modal('toggle');
         });
         $('.js-message').html(_btnshowcomment);
+        $('.js-message').removeClass('ps-3');
         //stop interval that handles both time elapsed and the red dot
         clearInterval(elapsedTimeTimer);
     }
