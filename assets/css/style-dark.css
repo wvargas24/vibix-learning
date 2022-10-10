@@ -284,6 +284,73 @@ a.edit .bi {
     font-size: 15px;
 }
 
+.title-step {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #EFEFEF;
+    margin-bottom: 5px;
+}
+
+.text-step {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #AEAEAE;
+}
+
+.current-step-title {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #EFEFEF;
+}
+
+.current-step-subtitle {
+    font-family: var(--bs-body-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #AEAEAE;
+}
+
+.box-steps:hover {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.item-step {
+    cursor: pointer;
+    margin-top: -25px;
+}
+
+.item-step>img {
+    margin-right: 10px;
+}
+
+.box-text-step {
+    display: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.item-step:hover>.box-text-step {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-step:hover>.text-step {
+    display: none;
+}
+
 /*==================== CHAT =========================*/
 .chat-content-header {
     padding: 1rem;
